@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新人育成体制 自己診断チェックリスト｜電気工事 教育プログラム設計</title>
+  <meta name="description" content="20の質問に答えるだけで、御社の新人育成体制の現状と改善ポイントがわかります。電気工事業の中小企業向け無料診断ツール。">
+  <link rel="canonical" href="https://ohki-electric.com/checklist.html" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ohki-electric.com/checklist.html" />
+  <meta property="og:title" content="新人育成体制 自己診断チェックリスト｜電気工事 教育プログラム設計" />
+  <meta property="og:description" content="20の質問に答えるだけで、御社の新人育成体制の現状と改善ポイントがわかります。電気工事業の中小企業向け無料診断ツール。" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="新人育成体制 自己診断チェックリスト｜電気工事 教育プログラム設計" />
+  <meta name="twitter:description" content="20の質問に答えるだけで、御社の新人育成体制の現状と改善ポイントがわかります。" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+      color: #2c2c2c;
+      background: #F9F7F4;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ===== Header ===== */
+    .cl-header {
+      background: #0f2b45;
+      padding: 18px 24px;
+      text-align: center;
+    }
+    .cl-header a {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.8rem;
+      transition: color 0.2s;
+    }
+    .cl-header a:hover { color: #fff; }
+
+    /* ===== Hero ===== */
+    .cl-hero {
+      background: linear-gradient(160deg, #0f2b45 0%, #1a3a5c 40%, #244d72 100%);
+      padding: 56px 24px 48px;
+      text-align: center;
+      color: #fff;
+    }
+    .cl-hero-label {
+      display: inline-block;
+      background: rgba(212,165,116,0.2);
+      color: #D4A574;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 16px;
+      border-radius: 20px;
+      border: 1px solid rgba(212,165,116,0.3);
+      margin-bottom: 20px;
+    }
+    .cl-hero h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .cl-hero p {
+      font-size: 0.9rem;
+      color: #b0c8e0;
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .cl-hero-meta {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+    .cl-hero-meta span {
+      font-size: 0.8rem;
+      color: #8fb8d9;
+      background: rgba(255,255,255,0.08);
+      padding: 6px 16px;
+      border-radius: 6px;
+    }
+
+    /* ===== Progress Bar ===== */
+    .cl-progress-wrap {
+      background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .cl-progress-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .cl-progress-bar {
+      flex: 1;
+      height: 8px;
+      background: #e8e8e8;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .cl-progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #D4A574, #c08c50);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+    .cl-progress-text {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #1a3a5c;
+      white-space: nowrap;
+    }
+
+    /* ===== Main Content ===== */
+    .cl-main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    /* ===== Category ===== */
+    .cl-category {
+      margin-bottom: 32px;
+    }
+    .cl-cat-header {
+      background: #1a3a5c;
+      padding: 16px 20px;
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .cl-cat-title {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .cl-cat-subtitle {
+      color: #D4A574;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    .cl-cat-items {
+      background: #fff;
+      border-radius: 0 0 10px 10px;
+      overflow: hidden;
+      border: 1px solid #e8e8e8;
+      border-top: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    /* ===== Check Item ===== */
+    .cl-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 20px;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      transition: background 0.15s;
+      user-select: none;
+    }
+    .cl-item:last-child { border-bottom: none; }
+    .cl-item:hover { background: #F9F7F4; }
+    .cl-item.checked { background: #f8f4ef; }
+
+    .cl-checkbox {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .cl-item.checked .cl-checkbox {
+      background: #1a3a5c;
+      border-color: #1a3a5c;
+    }
+    .cl-checkbox svg {
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .cl-item.checked .cl-checkbox svg {
+      opacity: 1;
+    }
+
+    .cl-item-text {
+      font-size: 0.9rem;
+      color: #333;
+      line-height: 1.6;
+      padding-top: 1px;
+    }
+
+    /* ===== Result Section ===== */
+    .cl-result {
+      display: none;
+      margin-top: 40px;
+      animation: fadeInUp 0.5s ease;
+    }
+    .cl-result.visible { display: block; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .cl-result-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .cl-result-header h2 {
+      font-size: 1.3rem;
+      color: #1a3a5c;
+      margin-bottom: 4px;
+    }
+    .cl-result-header .cl-gold-line {
+      display: inline-block;
+      width: 50px;
+      height: 3px;
+      background: #D4A574;
+      border-radius: 2px;
+    }
+
+    .cl-score-display {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .cl-score-num {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #D4A574;
+      line-height: 1;
+    }
+    .cl-score-num span {
+      font-size: 1.2rem;
+      color: #888;
+      font-weight: 500;
+    }
+
+    .cl-result-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 28px 24px;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      margin-bottom: 20px;
+    }
+    .cl-result-badge {
+      display: inline-block;
+      padding: 5px 18px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .cl-result-msg {
+      font-size: 0.92rem;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    /* Category breakdown */
+    .cl-breakdown {
+      background: #fff;
+      border-radius: 10px;
+      padding: 24px;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      margin-bottom: 28px;
+    }
+    .cl-breakdown h3 {
+      font-size: 1rem;
+      color: #1a3a5c;
+      margin-bottom: 16px;
+    }
+    .cl-breakdown-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .cl-breakdown-row:last-child { margin-bottom: 0; }
+    .cl-breakdown-label {
+      font-size: 0.82rem;
+      color: #555;
+      min-width: 140px;
+    }
+    .cl-breakdown-bar {
+      flex: 1;
+      height: 10px;
+      background: #eee;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .cl-breakdown-fill {
+      height: 100%;
+      border-radius: 5px;
+      transition: width 0.5s ease;
+    }
+    .cl-breakdown-score {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #1a3a5c;
+      min-width: 32px;
+      text-align: right;
+    }
+
+    /* ===== CTA / Form ===== */
+    .cl-cta {
+      background: linear-gradient(135deg, #0f2b45 0%, #1a3a5c 100%);
+      border-radius: 8px;
+      padding: 40px 28px;
+      text-align: center;
+      margin-top: 32px;
+    }
+    .cl-cta h3 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .cl-cta p {
+      color: #8fb8d9;
+      font-size: 0.85rem;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    .cl-form {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    .cl-form-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .cl-form input[type="email"],
+    .cl-form input[type="text"] {
+      flex: 1;
+      min-width: 200px;
+      padding: 13px 16px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+    }
+    .cl-form input::placeholder { color: rgba(255,255,255,0.4); }
+    .cl-form input:focus {
+      outline: none;
+      border-color: #D4A574;
+      background: rgba(255,255,255,0.12);
+    }
+    .cl-form-submit {
+      width: 100%;
+      background: #D4A574;
+      color: #0f2b45;
+      font-size: 0.95rem;
+      font-weight: 700;
+      height: 52px; padding: 0 28px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .cl-form-submit:hover { background: #C19660; box-shadow: 0 4px 14px rgba(0,0,0,0.15); }
+    .cl-form-submit:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .cl-form-note {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.35);
+      margin-top: 10px;
+    }
+    .cl-form-success {
+      display: none;
+      color: #D4A574;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 20px 0;
+    }
+
+    /* ===== Consult Link ===== */
+    .cl-consult-link {
+      display: block;
+      text-align: center;
+      margin-top: 16px;
+    }
+    .cl-consult-link a {
+      color: #D4A574;
+      font-size: 0.85rem;
+      border-bottom: 1px solid rgba(212,165,116,0.4);
+      padding-bottom: 2px;
+      transition: opacity 0.2s;
+    }
+    .cl-consult-link a:hover { opacity: 0.8; }
+
+    /* ===== Show Result Button ===== */
+    .cl-show-result {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 40px auto 0;
+      height: 56px;
+      background: #D4A574;
+      color: #0f2b45;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .cl-show-result:hover { background: #C19660; box-shadow: 0 6px 20px rgba(26,58,92,0.3); }
+
+    /* ===== Footer ===== */
+    .cl-footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: #999;
+      font-size: 0.75rem;
+    }
+    .cl-footer a { color: #1a3a5c; font-weight: 600; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 640px) {
+      .cl-hero h1 { font-size: 1.3rem; }
+      .cl-hero-meta { gap: 10px; }
+      .cl-hero-meta span { font-size: 0.72rem; padding: 5px 10px; }
+      .cl-cat-header { padding: 14px 16px; }
+      .cl-item { padding: 14px 16px; gap: 12px; }
+      .cl-result-card { padding: 22px 18px; }
+      .cl-cta { padding: 28px 20px; }
+      .cl-breakdown-label { min-width: 100px; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="cl-header">
+    <a href="index.html">← ホームページに戻る</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="cl-hero">
+    <div class="cl-hero-label">建設・電気工事業向け｜無料診断</div>
+    <h1>御社の新人育成体制を<br>5分で診断</h1>
+    <p>20の質問にチェックを入れるだけで、御社の育成体制の現在地と改善のヒントがわかります。</p>
+    <div class="cl-hero-meta">
+      <span>所要時間 約5分</span>
+      <span>全20項目</span>
+      <span>診断結果をすぐに表示</span>
+    </div>
+  </section>
+
+  <!-- Progress Bar -->
+  <div class="cl-progress-wrap">
+    <div class="cl-progress-inner">
+      <div class="cl-progress-bar">
+        <div class="cl-progress-fill" id="progressFill"></div>
+      </div>
+      <div class="cl-progress-text"><span id="checkedCount">0</span> / 20</div>
+    </div>
+  </div>
+
+  <!-- Checklist -->
+  <div class="cl-main">
+
+    <!-- Category A -->
+    <div class="cl-category" data-cat="A">
+      <div class="cl-cat-header">
+        <span class="cl-cat-title">A. 育成計画・カリキュラム</span>
+        <span class="cl-cat-subtitle">新人を育てる「設計図」はありますか？</span>
+      </div>
+      <div class="cl-cat-items">
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">新人向けの育成計画やカリキュラムが文書化されている</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">入社後1年間の到達目標（覚えるべき作業・取得すべき資格）が明確になっている</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">座学と現場実習のバランスが計画されている</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">何を、どの順番で、どのレベルまで教えるかが決まっている</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">OJT期間中の学習内容を記録・管理する仕組みがある</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category B -->
+    <div class="cl-category" data-cat="B">
+      <div class="cl-cat-header">
+        <span class="cl-cat-title">B. 指導体制</span>
+        <span class="cl-cat-subtitle">「教える側」の準備はできていますか？</span>
+      </div>
+      <div class="cl-cat-items">
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">新人に固定の指導担当者（メンター）がついている</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">指導担当者向けの「教え方マニュアル」や研修がある</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">指導担当者によって教える内容や順番がバラバラになっていない</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">新人の進捗を定期的に確認・相談する面談の場がある</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">指導に時間を使う社員への評価・処遇面での配慮がある</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category C -->
+    <div class="cl-category" data-cat="C">
+      <div class="cl-cat-header">
+        <span class="cl-cat-title">C. 安全教育・資格取得支援</span>
+        <span class="cl-cat-subtitle">安全と資格の仕組みは整っていますか？</span>
+      </div>
+      <div class="cl-cat-items">
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">入社時の安全衛生教育を体系的に実施している</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">危険な作業を任せる前に、能力を確認する仕組みがある</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">電気工事士など技術資格の取得を会社として支援している（費用負担・学習時間の確保など）</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">資格取得者に対する処遇改善（手当・配置）がある</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">ヒヤリハットや事故の記録を教育に活かしている</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category D -->
+    <div class="cl-category" data-cat="D">
+      <div class="cl-cat-header">
+        <span class="cl-cat-title">D. 技術継承・育成文化</span>
+        <span class="cl-cat-subtitle">ベテランの技術を次世代に引き継げていますか？</span>
+      </div>
+      <div class="cl-cat-items">
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">ベテラン職人の「コツ・勘所」を言語化して伝える取組みがある</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">新人が質問しやすい・失敗から学べる雰囲気がある</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">育成にかかるコスト（時間・人件費）を把握している</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">新人の定着率（離職率）を把握し、改善に取り組んでいる</div>
+        </div>
+        <div class="cl-item" onclick="toggleCheck(this)">
+          <div class="cl-checkbox"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7L5.5 10.5L12 3.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cl-item-text">育成の成果（この人材がここまで育った）を具体的に説明できる</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Show Result Button -->
+    <button class="cl-show-result" onclick="showResult()">診断結果を見る</button>
+
+    <!-- Result Section -->
+    <div class="cl-result" id="resultSection">
+      <div class="cl-result-header">
+        <h2>診断結果</h2>
+        <div class="cl-gold-line"></div>
+      </div>
+
+      <div class="cl-score-display">
+        <div class="cl-score-num"><span id="resultScore">0</span> <span>/ 20</span></div>
+      </div>
+
+      <!-- Category Breakdown -->
+      <div class="cl-breakdown">
+        <h3>カテゴリ別スコア</h3>
+        <div class="cl-breakdown-row">
+          <span class="cl-breakdown-label">A. 育成計画</span>
+          <div class="cl-breakdown-bar"><div class="cl-breakdown-fill" id="barA" style="width:0%; background:#2563a0;"></div></div>
+          <span class="cl-breakdown-score" id="scoreA">0/5</span>
+        </div>
+        <div class="cl-breakdown-row">
+          <span class="cl-breakdown-label">B. 指導体制</span>
+          <div class="cl-breakdown-bar"><div class="cl-breakdown-fill" id="barB" style="width:0%; background:#D4A574;"></div></div>
+          <span class="cl-breakdown-score" id="scoreB">0/5</span>
+        </div>
+        <div class="cl-breakdown-row">
+          <span class="cl-breakdown-label">C. 安全・資格</span>
+          <div class="cl-breakdown-bar"><div class="cl-breakdown-fill" id="barC" style="width:0%; background:#2e8b57;"></div></div>
+          <span class="cl-breakdown-score" id="scoreC">0/5</span>
+        </div>
+        <div class="cl-breakdown-row">
+          <span class="cl-breakdown-label">D. 技術継承</span>
+          <div class="cl-breakdown-bar"><div class="cl-breakdown-fill" id="barD" style="width:0%; background:#7b5ea7;"></div></div>
+          <span class="cl-breakdown-score" id="scoreD">0/5</span>
+        </div>
+      </div>
+
+      <!-- Result Card -->
+      <div class="cl-result-card" id="resultCard">
+        <div class="cl-result-badge" id="resultBadge"></div>
+        <div class="cl-result-msg" id="resultMsg"></div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cl-cta">
+        <h3>改善ヒントをメールで受け取る</h3>
+        <p>メールアドレスをご入力いただくと、カテゴリ別の改善ヒントをメールでお届けします。<br>御社の状況を踏まえた無料ヒアリング（約30分・オンライン）もご案内いたします。</p>
+        <form class="cl-form" id="resultForm" onsubmit="return handleSubmit(event)">
+          <input type="hidden" name="score" id="hiddenScore">
+          <input type="hidden" name="scoreA" id="hiddenScoreA">
+          <input type="hidden" name="scoreB" id="hiddenScoreB">
+          <input type="hidden" name="scoreC" id="hiddenScoreC">
+          <input type="hidden" name="scoreD" id="hiddenScoreD">
+          <input type="hidden" name="level" id="hiddenLevel">
+          <div class="cl-form-row">
+            <input type="text" name="company" placeholder="会社名" required>
+          </div>
+          <div class="cl-form-row">
+            <input type="text" name="name" placeholder="お名前" required>
+          </div>
+          <div class="cl-form-row">
+            <input type="email" name="email" placeholder="メールアドレス" required>
+          </div>
+          <button type="submit" class="cl-form-submit">改善ヒントをメールで受け取る</button>
+          <p class="cl-form-note">※ 入力いただいた情報は診断結果のご連絡と無料ヒアリングのご案内にのみ使用します。</p>
+        </form>
+        <div class="cl-form-success" id="formSuccess">
+          送信ありがとうございます。<br>カテゴリ別の改善ヒントと無料ヒアリングのご案内をメールでお送りします。
+        </div>
+        <div class="cl-consult-link">
+          <a href="index.html#contact">ヒアリング不要で質問だけしたい方はこちら</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="cl-footer">
+    <a href="index.html">電気工事 教育プログラム設計コンサルティング</a>
+    <p style="margin-top:8px;">指導歴13年 ｜ 延べ5,000名超の指導実績 ｜ 技術書3冊出版</p>
+  </div>
+
+  <script>
+    function toggleCheck(el) {
+      el.classList.toggle('checked');
+      updateProgress();
+    }
+
+    function updateProgress() {
+      var total = document.querySelectorAll('.cl-item').length;
+      var checked = document.querySelectorAll('.cl-item.checked').length;
+      document.getElementById('checkedCount').textContent = checked;
+      document.getElementById('progressFill').style.width = (checked / total * 100) + '%';
+    }
+
+    function getCatScore(cat) {
+      var items = document.querySelector('[data-cat="' + cat + '"]').querySelectorAll('.cl-item');
+      var score = 0;
+      items.forEach(function(item) {
+        if (item.classList.contains('checked')) score++;
+      });
+      return score;
+    }
+
+    function showResult() {
+      var total = document.querySelectorAll('.cl-item.checked').length;
+      var a = getCatScore('A');
+      var b = getCatScore('B');
+      var c = getCatScore('C');
+      var d = getCatScore('D');
+
+      // Update score display
+      document.getElementById('resultScore').textContent = total;
+
+      // Update breakdown bars
+      document.getElementById('barA').style.width = (a / 5 * 100) + '%';
+      document.getElementById('barB').style.width = (b / 5 * 100) + '%';
+      document.getElementById('barC').style.width = (c / 5 * 100) + '%';
+      document.getElementById('barD').style.width = (d / 5 * 100) + '%';
+      document.getElementById('scoreA').textContent = a + '/5';
+      document.getElementById('scoreB').textContent = b + '/5';
+      document.getElementById('scoreC').textContent = c + '/5';
+      document.getElementById('scoreD').textContent = d + '/5';
+
+      // Determine level
+      var badge = document.getElementById('resultBadge');
+      var msg = document.getElementById('resultMsg');
+      var level = '';
+
+      if (total >= 16) {
+        level = '充実';
+        badge.textContent = '充実';
+        badge.style.background = '#2e8b57';
+        msg.innerHTML = '育成体制がしっかり整備されています。定期的な見直しと改善を続けることで、さらに精度を高められます。業界内でも先進的な育成体制を持つ企業です。';
+      } else if (total >= 11) {
+        level = '標準的';
+        badge.textContent = '標準的';
+        badge.style.background = '#e6a817';
+        msg.innerHTML = '基本的な基盤はありますが、いくつかの領域に改善の余地があります。<br><br>特にスコアが低いカテゴリから着手することで、育成の効率と質が大きく変わります。カリキュラムの体系化や指導マニュアルの整備など、部分的な改善だけでも効果が見込めます。';
+      } else if (total >= 6) {
+        level = '要改善';
+        badge.textContent = '要改善';
+        badge.style.background = '#d4762c';
+        msg.innerHTML = '育成が属人的になっている可能性が高い状態です。「誰が教えるか」によって新人の成長にばらつきが出ていませんか？<br><br>まずは育成カリキュラムの文書化と、指導者向けマニュアルの整備から始めることをおすすめします。仕組み化することで、指導者の負担も軽減できます。';
+      } else {
+        level = '要対策';
+        badge.textContent = '要対策';
+        badge.style.background = '#c0392b';
+        msg.innerHTML = '体系的な育成が機能していない状態です。新人の早期離職や、ベテランの退職による技術の途絶といったリスクが高まっています。<br><br>育成体制の構築は、一度仕組みをつくれば毎年使える「資産」になります。早めの対策が将来のコスト削減にもつながります。';
+      }
+
+      // Set hidden fields
+      document.getElementById('hiddenScore').value = total;
+      document.getElementById('hiddenScoreA').value = a;
+      document.getElementById('hiddenScoreB').value = b;
+      document.getElementById('hiddenScoreC').value = c;
+      document.getElementById('hiddenScoreD').value = d;
+      document.getElementById('hiddenLevel').value = level;
+
+      // Show result
+      var resultSection = document.getElementById('resultSection');
+      resultSection.classList.add('visible');
+
+      // Scroll to result
+      setTimeout(function() {
+        resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+
+    // ===== Google Apps Script WebアプリのURL =====
+    // GASをデプロイしたら、ここにURLを貼り付けてください
+    var GAS_URL = 'https://script.google.com/macros/s/AKfycbyKdVzcxmCwQ0Ew37je_Z_UOknWevRnnnEotGjWYNYtMNhTHz1zIYmkDlhskiTSxOOC/exec';
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      var form = document.getElementById('resultForm');
+      var submitBtn = form.querySelector('.cl-form-submit');
+
+      // 送信中の表示
+      submitBtn.disabled = true;
+      submitBtn.textContent = '送信中...';
+
+      // チェック済み項目のテキストを収集
+      var checkedItems = [];
+      document.querySelectorAll('.cl-item.checked .cl-item-text').forEach(function(el) {
+        checkedItems.push(el.textContent);
+      });
+
+      // 送信データを構築
+      var payload = {
+        company: form.querySelector('[name="company"]').value,
+        name: form.querySelector('[name="name"]').value,
+        email: form.querySelector('[name="email"]').value,
+        score: parseInt(document.getElementById('hiddenScore').value),
+        scoreA: parseInt(document.getElementById('hiddenScoreA').value),
+        scoreB: parseInt(document.getElementById('hiddenScoreB').value),
+        scoreC: parseInt(document.getElementById('hiddenScoreC').value),
+        scoreD: parseInt(document.getElementById('hiddenScoreD').value),
+        level: document.getElementById('hiddenLevel').value,
+        checkedItems: checkedItems
+      };
+
+      // GASに送信
+      fetch(GAS_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function() {
+        // no-corsモードではレスポンスが読めないので、送信成功として扱う
+        form.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      })
+      .catch(function(error) {
+        console.error('送信エラー:', error);
+        submitBtn.disabled = false;
+        submitBtn.textContent = '改善ヒントをメールで受け取る';
+        alert('送信に失敗しました。お手数ですが info@ohki-electric.com まで直接ご連絡ください。');
+      });
+
+      return false;
+    }
+  </script>
+
+</body>
+</html>

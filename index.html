@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電気工事の新人育成・教育プログラム構築｜技術書著者による研修設計</title>
+  <meta name="description" content="電気工事業の中小企業向け。指導歴13年・延べ5,000名超の実績を持つ専門家が、OJT標準化・育成カリキュラム・資格取得支援まで、御社専用の教育プログラムを設計します。">
+  <link rel="canonical" href="https://ohki-electric.com/" />
+
+  <!-- OGP (Facebook / SNS) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ohki-electric.com/" />
+  <meta property="og:title" content="電気工事の新人育成・教育プログラム構築｜技術書著者による研修設計" />
+  <meta property="og:description" content="電気工事業の中小企業向け。指導歴13年・延べ5,000名超の実績を持つ専門家が、御社専用の教育プログラムを設計します。" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:site_name" content="電気工事 研修設計コンサルティング" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="電気工事の新人育成・教育プログラム構築｜技術書著者による研修設計" />
+  <meta name="twitter:description" content="電気工事業の中小企業向け。指導歴13年・延べ5,000名超の実績を持つ専門家が、御社専用の教育プログラムを設計します。" />
+
+  <!-- 構造化データ (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "電気工事 研修設計コンサルティング",
+    "description": "電気工事業の新人育成・教育プログラム設計コンサルティング",
+    "url": "https://ohki-electric.com",
+    "email": "info@ohki-electric.com",
+    "areaServed": { "@type": "Country", "name": "JP" },
+    "serviceType": ["教育プログラム設計", "研修カリキュラム構築", "OJT標準化支援"],
+    "founder": {
+      "@type": "Person",
+      "name": "大木健司",
+      "jobTitle": "電気工事教育専門家・専門学校 主任教員",
+      "knowsAbout": ["電気工事士教育", "新人育成プログラム", "OJT標準化", "教育カリキュラム設計"]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "大木健司",
+    "jobTitle": "専門学校 電気工事分野 主任教員",
+    "url": "https://ohki-electric.com",
+    "sameAs": [
+      "https://www.amazon.co.jp/stores/author/B0BMQNLWJL"
+    ],
+    "author": [
+      { "@type": "Book", "name": "「電気工事、マジわからん」と思ったときに読む本", "publisher": { "@type": "Organization", "name": "オーム社" } },
+      { "@type": "Book", "name": "図解入門 現場で役立つ第二種電気工事の基本と実際", "publisher": { "@type": "Organization", "name": "秀和システム" } },
+      { "@type": "Book", "name": "図解入門 現場で役立つ 屋内配線図の基本と仕組み", "publisher": { "@type": "Organization", "name": "秀和システム" } }
+    ]
+  }
+  </script>
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+      color: #2c2c2c;
+      background: #F9F7F4;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ===== Header / Nav ===== */
+    header {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+      background: transparent;
+      border-bottom: 1px solid transparent;
+      backdrop-filter: blur(8px);
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    header.scrolled {
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1080px; margin: 0 auto;
+      padding: 14px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo {
+      font-size: 0.95rem; font-weight: 700; color: #fff;
+      letter-spacing: 0.02em;
+      transition: color 0.3s;
+    }
+    header.scrolled .nav-logo { color: #1a3a5c; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      font-size: 0.85rem; color: rgba(255,255,255,0.85); font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    header.scrolled .nav-links a { color: #555; }
+    header.scrolled .nav-links a:hover { color: #1a3a5c; }
+
+    /* ===== Hero ===== */
+    .hero {
+      margin-top: 56px;
+      padding: 100px 24px 88px;
+      min-height: 70vh;
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(160deg, #0f2b45 0%, #1a3a5c 40%, #244d72 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+    .hero-illustration {
+      position: absolute; right: -40px; bottom: -20px;
+      width: 320px; height: 320px; opacity: 0.08;
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-badges {
+      display: flex; justify-content: center; gap: 10px;
+      flex-wrap: wrap; margin-bottom: 32px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.9);
+      font-size: 0.78rem; font-weight: 600;
+      padding: 6px 16px; border-radius: 20px;
+      letter-spacing: 0.03em;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .hero h1 {
+      font-size: 2.2rem; font-weight: 800; color: #fff;
+      line-height: 1.5; margin-bottom: 24px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(transparent 60%, rgba(212,165,116,0.35) 60%);
+    }
+    .hero-sub {
+      font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 600px;
+      margin: 0 auto 40px; line-height: 1.9;
+    }
+    .hero-ctas { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .hero-cta {
+      display: inline-block;
+      font-size: 0.95rem; font-weight: 600;
+      padding: 15px 36px; border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .hero-cta-primary {
+      background: #D4A574; color: #0f2b45;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+      height: 52px; display: inline-flex; align-items: center;
+    }
+    .hero-cta-primary:hover { background: #C19660; box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+    .hero-cta-secondary {
+      background: transparent; color: #fff;
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+    .hero-cta-secondary:hover { background: rgba(255,255,255,0.1); }
+    .hero-scroll-hint {
+      margin-top: 40px; display: flex; justify-content: center;
+    }
+    .hero-scroll-hint span {
+      display: block; width: 24px; height: 24px;
+      border-right: 2px solid rgba(255,255,255,0.4);
+      border-bottom: 2px solid rgba(255,255,255,0.4);
+      transform: rotate(45deg);
+      animation: scrollBounce 2s infinite;
+    }
+    @keyframes scrollBounce {
+      0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.4; }
+      50% { transform: rotate(45deg) translateY(8px); opacity: 0.8; }
+    }
+
+    /* ===== Stats Bar ===== */
+    .stats-bar {
+      background: #fff; border-bottom: 1px solid #eaeef3;
+      padding: 28px 24px;
+    }
+    .stats-inner {
+      max-width: 880px; margin: 0 auto;
+      display: flex; justify-content: center; gap: 48px;
+      flex-wrap: wrap;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-size: 2.4rem; font-weight: 800; color: #D4A574;
+      line-height: 1.2;
+    }
+    .stat-num span { font-size: 0.9rem; font-weight: 600; color: #1a3a5c; }
+    .stat-label {
+      font-size: 0.78rem; color: #888; margin-top: 4px;
+    }
+
+    /* ===== Section Common ===== */
+    section { padding: 96px 24px; }
+    .section-inner { max-width: 960px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.72rem; font-weight: 700; color: #2563a0;
+      text-transform: uppercase; letter-spacing: 0.14em;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: 1.55rem; font-weight: 800; color: #1a3a5c;
+      margin-bottom: 16px; line-height: 1.5;
+    }
+    .section-title::after {
+      content: ""; display: block;
+      width: 48px; height: 3px; background: #D4A574;
+      margin-top: 12px;
+    }
+    .section-title.centered { text-align: center; }
+    .section-title.centered::after { margin-left: auto; margin-right: auto; }
+    .section-lead {
+      font-size: 0.95rem; color: #666; margin-bottom: 48px;
+      line-height: 1.9;
+    }
+
+    /* ===== Problem ===== */
+    .problem { background: #fff; }
+    .problem-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .problem-card {
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 10px; padding: 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s;
+    }
+    .problem-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .problem-card .icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: #fef3e8; display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; margin-bottom: 16px;
+    }
+    .problem-card:nth-child(2) .icon { background: #e8f4fe; }
+    .problem-card:nth-child(3) .icon { background: #fde8e8; }
+    .problem-card h3 {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 10px; line-height: 1.5;
+    }
+    .problem-card p { font-size: 0.88rem; color: #666; line-height: 1.7; }
+
+    /* ===== Download Checklist ===== */
+    .download-checklist { background: #fff; }
+    .checklist-box {
+      background: #fff; border-radius: 12px; padding: 56px 48px;
+      text-align: center; border: 1px solid #e8e8e8;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .checklist-box h3 {
+      font-size: 1.3rem; font-weight: 800; color: #1a3a5c;
+      margin-bottom: 12px; line-height: 1.6;
+    }
+    .checklist-box p {
+      font-size: 0.95rem; color: #666; margin-bottom: 32px;
+      line-height: 1.8;
+    }
+    .checklist-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: #D4A574; color: #0f2b45;
+      font-size: 0.95rem; font-weight: 700;
+      height: 52px; padding: 0 40px; border: none; border-radius: 8px;
+      cursor: pointer; transition: all 0.2s;
+      text-align: center;
+    }
+    .checklist-btn:hover { background: #C19660; box-shadow: 0 4px 14px rgba(0,0,0,0.15); }
+
+    /* ===== Approach ===== */
+    .approach { background: #fff; }
+    .approach-box {
+      background: #fff;
+      border-radius: 12px; padding: 56px;
+      text-align: center;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .approach-box h3 {
+      font-size: 1.2rem; font-weight: 800; color: #1a3a5c;
+      margin-bottom: 16px; line-height: 1.6;
+    }
+    .approach-box p {
+      font-size: 0.95rem; color: #555; line-height: 1.9;
+      max-width: 640px; margin: 0 auto;
+    }
+
+    /* ===== Merit ===== */
+    .merit { background: #fff; }
+    .merit-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .merit-card {
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 10px; padding: 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s;
+    }
+    .merit-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .merit-card .merit-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+    }
+    .merit-card:nth-child(1) .merit-icon { background: #e8f0fa; }
+    .merit-card:nth-child(2) .merit-icon { background: #fef3e8; }
+    .merit-card:nth-child(3) .merit-icon { background: #e8fae8; }
+    .merit-card:nth-child(4) .merit-icon { background: #f3e8fe; }
+    .merit-card:nth-child(5) .merit-icon { background: #fde8e8; }
+    .merit-card:nth-child(6) .merit-icon { background: #e8f4fe; }
+    .merit-card h3 {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 10px; line-height: 1.5;
+    }
+    .merit-card p { font-size: 0.85rem; color: #666; line-height: 1.7; }
+    .merit-compare {
+      margin-top: 40px; border-radius: 10px; overflow: hidden;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .merit-compare table {
+      width: 100%; border-collapse: collapse; background: #fff;
+    }
+    .merit-compare th {
+      background: #f5f7fa; text-align: left;
+      font-size: 0.78rem; font-weight: 700; color: #1a3a5c;
+      padding: 12px 16px; border-bottom: 1px solid #eaeef3;
+    }
+    .merit-compare th:first-child { width: 30%; }
+    .merit-compare td {
+      font-size: 0.85rem; color: #444; padding: 12px 16px;
+      border-bottom: 1px solid #f0f2f5; line-height: 1.6;
+    }
+    .merit-compare tr:last-child td { border-bottom: none; }
+    .merit-compare .highlight-cell {
+      background: #fafcff; font-weight: 600; color: #1a3a5c;
+    }
+
+    /* ===== Section Illustration ===== */
+    .section-illust {
+      display: flex; justify-content: center; margin-bottom: 40px;
+    }
+    .section-illust svg { width: 180px; height: 140px; }
+
+    /* ===== Services ===== */
+    .services { background: #F9F7F4; }
+    .service-list { display: flex; flex-direction: column; gap: 24px; }
+    .service-item {
+      background: #fff; border-radius: 10px;
+      padding: 40px; border: 1.5px solid #D4A574;
+      display: grid; grid-template-columns: 56px 1fr; gap: 20px;
+      align-items: start;
+      transition: box-shadow 0.2s;
+    }
+    .service-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .service-item:first-child {
+      background: #1a3a5c; border-color: #1a3a5c;
+    }
+    .service-item:first-child .service-body h3 { color: #fff; }
+    .service-item:first-child .service-body p { color: rgba(255,255,255,0.75); }
+    .service-item:first-child .service-deliverable { background: rgba(212,165,116,0.2); color: #D4A574; }
+    .service-item:first-child .service-num { background: #D4A574; }
+    .service-num {
+      width: 56px; height: 56px; border-radius: 12px;
+      background: #D4A574; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; font-weight: 800;
+    }
+    .service-body h3 {
+      font-size: 1.05rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 8px;
+    }
+    .service-body p { font-size: 0.9rem; color: #555; line-height: 1.8; }
+    .service-deliverable {
+      display: inline-block; background: #e8f0fa; color: #2563a0;
+      font-size: 0.75rem; font-weight: 600; padding: 4px 12px;
+      border-radius: 4px; margin-top: 12px;
+    }
+
+    /* ===== Pricing ===== */
+    .pricing { background: #fff; }
+    .pricing-block {
+      margin-bottom: 36px;
+    }
+    .pricing-block-title {
+      font-size: 1.05rem; font-weight: 800; color: #1a3a5c;
+      margin-bottom: 6px; display: flex; align-items: center; gap: 10px;
+    }
+    .pricing-block-title .num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px; border-radius: 6px;
+      background: #D4A574; color: #fff;
+      font-size: 0.8rem; font-weight: 800; flex-shrink: 0;
+    }
+    .pricing-block-desc {
+      font-size: 0.88rem; color: #666; line-height: 1.7; margin-bottom: 16px;
+      padding-left: 38px;
+    }
+    .pricing-table {
+      width: 100%; border-collapse: collapse;
+      background: #fff; border-radius: 8px; overflow: hidden;
+      border: 1.5px solid #D4A574;
+    }
+    .pricing-table th {
+      background: #f5f7fa; text-align: left;
+      font-size: 0.78rem; font-weight: 700; color: #1a3a5c;
+      padding: 12px 16px; border-bottom: 1px solid #eaeef3;
+    }
+    .pricing-table td {
+      font-size: 0.88rem; color: #444; padding: 14px 16px;
+      border-bottom: 1px solid #f0f2f5;
+      line-height: 1.6;
+    }
+    .pricing-table tr:last-child td { border-bottom: none; }
+    .pricing-table .price-cell {
+      font-weight: 700; color: #1a3a5c; white-space: nowrap;
+    }
+    .pricing-table .period-cell {
+      font-size: 0.82rem; color: #888; white-space: nowrap;
+    }
+    .pricing-base-highlight {
+      background: #fff; border: 1px solid #e8e8e8; border-radius: 10px;
+      padding: 24px 28px; margin-bottom: 16px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .pricing-base-highlight .label {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+    }
+    .pricing-base-highlight .label small {
+      display: block; font-size: 0.82rem; font-weight: 400; color: #666; margin-top: 4px;
+    }
+    .pricing-base-highlight .amount {
+      font-size: 1.4rem; font-weight: 800; color: #D4A574;
+    }
+    .pricing-base-highlight .amount span {
+      font-size: 0.85rem; font-weight: 600;
+    }
+    .pricing-cta-row {
+      text-align: center; margin-top: 32px;
+    }
+    .pricing-cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 52px; padding: 0 40px; border-radius: 8px;
+      font-size: 0.95rem; font-weight: 600;
+      transition: all 0.2s; text-align: center;
+      background: #D4A574; color: #0f2b45;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+    .pricing-cta:hover { background: #C19660; box-shadow: 0 4px 14px rgba(0,0,0,0.15); }
+    .pricing-disclaimer {
+      text-align: center; margin-top: 24px;
+      font-size: 0.82rem; color: #888; line-height: 1.8;
+    }
+
+    /* ===== Profile ===== */
+    .profile { background: #fff; }
+    .profile-box {
+      background: #fff; border-radius: 12px;
+      padding: 48px; border: 1px solid #e8e8e8;
+      max-width: 720px; margin: 0 auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .profile-header {
+      display: flex; align-items: center; gap: 20px;
+      margin-bottom: 24px;
+    }
+    .profile-icon {
+      width: 64px; height: 64px; border-radius: 16px;
+      background: #1a3a5c; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; font-weight: 800;
+      flex-shrink: 0;
+    }
+    .profile-header-text {}
+    .profile-name {
+      font-size: 1.2rem; font-weight: 800; color: #1a3a5c;
+      margin-bottom: 2px;
+    }
+    .profile-title {
+      font-size: 0.82rem; color: #2563a0; font-weight: 600;
+    }
+    .profile-text {
+      font-size: 0.92rem; color: #555; line-height: 1.9;
+      margin-bottom: 20px;
+    }
+    .profile-credentials { list-style: none; margin-top: 20px; }
+    .profile-credentials li {
+      font-size: 0.88rem; color: #444;
+      padding: 8px 0; border-bottom: 1px solid #eaeef3;
+      display: flex; align-items: baseline; gap: 10px;
+    }
+    .profile-credentials li::before {
+      content: ""; width: 6px; height: 6px; border-radius: 50%;
+      background: #2563a0; flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    /* ===== Books ===== */
+    .books { background: #F9F7F4; }
+    .book-list { display: flex; flex-direction: column; gap: 16px; }
+    .book-item {
+      background: #fff; border-radius: 10px;
+      padding: 24px 28px;
+      display: flex; align-items: center; gap: 20px;
+      border: 1px solid #eaeef3;
+      transition: box-shadow 0.2s;
+    }
+    .book-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.05); }
+    .book-icon {
+      font-size: 1.5rem; flex-shrink: 0;
+      width: 48px; height: 48px;
+      background: #e8f0fa; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .book-info h3 {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 2px; line-height: 1.5;
+    }
+    .book-info p { font-size: 0.82rem; color: #888; }
+
+    /* ===== Flow ===== */
+    .flow { background: #fff; }
+    .flow-steps {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .flow-step {
+      text-align: center; padding: 28px 20px;
+      background: #fff; border-radius: 10px; border: 1px solid #e8e8e8;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s;
+    }
+    .flow-step:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .flow-step .num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: #1a3a5c; color: #fff;
+      font-size: 0.9rem; font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .flow-step h3 {
+      font-size: 0.9rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 6px;
+    }
+    .flow-step p { font-size: 0.82rem; color: #666; line-height: 1.7; }
+
+    /* ===== FAQ ===== */
+    .faq { background: #fff; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: #fff; border: 1.5px solid #1a3a5c;
+      border-radius: 8px; overflow: hidden;
+    }
+    .faq-question {
+      background: #fff; padding: 20px;
+      cursor: pointer; display: flex;
+      justify-content: space-between; align-items: center;
+      transition: background 0.2s;
+      font-weight: 600; color: #1a3a5c;
+      font-size: 0.95rem;
+    }
+    .faq-question:hover { background: #fafbfc; }
+    .faq-toggle {
+      width: 24px; height: 24px;
+      display: flex; align-items: center; justify-content: center;
+      color: #666; transition: transform 0.2s;
+    }
+    .faq-item.open .faq-toggle { transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      color: #666; font-weight: normal;
+      font-size: 0.9rem; line-height: 1.8;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 400px; padding: 0 20px 20px 20px;
+    }
+
+    /* ===== CTA Banner ===== */
+    .cta-banner {
+      background: linear-gradient(135deg, #0f2b45 0%, #1a3a5c 100%);
+      padding: 72px 24px; text-align: center;
+    }
+    .cta-banner h2 {
+      font-size: 1.3rem; font-weight: 800; color: #fff;
+      margin-bottom: 12px; line-height: 1.6;
+    }
+    .cta-banner p {
+      font-size: 0.9rem; color: rgba(255,255,255,0.75);
+      margin-bottom: 28px;
+    }
+    .cta-banner a {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: #D4A574; color: #0f2b45;
+      font-size: 0.95rem; font-weight: 700;
+      height: 52px; padding: 0 40px; border-radius: 8px;
+      transition: all 0.2s;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    .cta-banner a:hover { background: #C19660; box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    /* ===== Contact ===== */
+    .contact { background: #0f2b45; color: #fff; }
+    .contact .section-label { color: #5a9fd4; }
+    .contact .section-title { color: #fff; }
+    .contact .section-lead { color: #8fb8d9; }
+    .contact-form {
+      max-width: 520px; margin: 0 auto;
+      display: flex; flex-direction: column; gap: 18px;
+    }
+    .form-group label {
+      display: block; font-size: 0.82rem; font-weight: 600;
+      margin-bottom: 6px; color: #a0c0db;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; padding: 13px 16px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 6px; color: #fff;
+      font-size: 0.92rem; font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    .form-group input::placeholder, .form-group textarea::placeholder {
+      color: rgba(255,255,255,0.3);
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+      outline: none; border-color: #D4A574;
+      background: rgba(255,255,255,0.1);
+    }
+    .form-group select option { color: #2c2c2c; background: #fff; }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-submit {
+      background: #D4A574; color: #0f2b45;
+      font-size: 0.95rem; font-weight: 700;
+      height: 52px; padding: 0 20px; border: none; border-radius: 8px;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .form-submit:hover { background: #C19660; box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
+    .form-note {
+      text-align: center; font-size: 0.78rem; color: #6a9bc0;
+      margin-top: 6px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #091e30; color: #5a7e99;
+      text-align: center; padding: 24px;
+      font-size: 0.75rem;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .merit-compare table, .pricing-table {
+        display: block; overflow-x: auto; -webkit-overflow-scrolling: touch;
+      }
+      .merit-compare th, .merit-compare td { min-width: 120px; }
+      .pricing-table th, .pricing-table td { min-width: 100px; }
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.4rem; }
+      .hero { padding: 72px 20px 56px; min-height: auto; }
+      .section-title { font-size: 1.3rem; }
+      .nav-links { gap: 16px; }
+      .nav-links a { font-size: 0.8rem; }
+      .book-item { flex-direction: column; text-align: center; }
+      .profile-box { padding: 32px 24px; }
+      .service-item { grid-template-columns: 1fr; }
+      .service-num { width: 40px; height: 40px; font-size: 1rem; }
+      .stats-inner { gap: 24px; }
+      .approach-box { padding: 32px 24px; }
+      .profile-header { flex-direction: column; text-align: center; }
+      .checklist-box { padding: 32px 24px; }
+      .faq-question { font-size: 0.85rem; padding: 16px; }
+      .faq-answer { font-size: 0.85rem; }
+      .hero-illustration { display: none; }
+      .section-illust svg { width: 140px; height: 110px; }
+      .merit-compare th, .merit-compare td { padding: 10px 12px; font-size: 0.8rem; }
+      .pricing-table th, .pricing-table td { padding: 10px 12px; font-size: 0.82rem; }
+      .pricing-base-highlight { flex-direction: column; text-align: center; }
+    }
+
+    /* ===== Hamburger (mobile) ===== */
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: #fff; margin: 5px 0; transition: 0.3s;
+    }
+    header.scrolled .hamburger span { background: #1a3a5c; }
+    @media (max-width: 640px) {
+      .hamburger { display: block; }
+      .nav-links {
+        display: none; position: absolute;
+        top: 100%; left: 0; width: 100%;
+        background: #fff; flex-direction: column;
+        padding: 16px 24px; gap: 16px;
+        border-bottom: 1px solid #e8e8e8;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { color: #555; }
+      .nav-links a:hover { color: #1a3a5c; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== Header ========== -->
+  <header>
+    <div class="nav-inner">
+      <div class="nav-logo">電気工事 研修設計コンサルティング</div>
+      <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#merit">メリット</a>
+        <a href="#services">サービス</a>
+        <a href="#pricing">料金</a>
+        <a href="#profile">プロフィール</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== Hero ========== -->
+  <section class="hero">
+    <!-- Hero background illustration: electrical circuit motif -->
+    <svg class="hero-illustration" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+        <!-- Circuit paths -->
+        <path d="M40,160 H100 L120,120 L140,200 L160,120 L180,200 L200,160 H260" stroke-width="2.5"/>
+        <path d="M260,160 H290"/>
+        <path d="M10,160 H40"/>
+        <!-- Ground symbol -->
+        <line x1="140" y1="240" x2="180" y2="240"/>
+        <line x1="148" y1="252" x2="172" y2="252"/>
+        <line x1="155" y1="264" x2="165" y2="264"/>
+        <line x1="160" y1="200" x2="160" y2="240"/>
+        <!-- Resistor box -->
+        <rect x="70" y="60" width="60" height="30" rx="4"/>
+        <line x1="60" y1="75" x2="70" y2="75"/>
+        <line x1="130" y1="75" x2="145" y2="75"/>
+        <!-- Capacitor -->
+        <line x1="200" y1="55" x2="200" y2="95"/>
+        <line x1="215" y1="55" x2="215" y2="95"/>
+        <line x1="175" y1="75" x2="200" y2="75"/>
+        <line x1="215" y1="75" x2="240" y2="75"/>
+        <!-- Connection dots -->
+        <circle cx="40" cy="160" r="4" fill="#fff"/>
+        <circle cx="260" cy="160" r="4" fill="#fff"/>
+        <circle cx="160" cy="200" r="4" fill="#fff"/>
+        <!-- Lightning bolt -->
+        <path d="M240,20 L225,50 L245,50 L220,90" stroke-width="3"/>
+        <!-- Plug symbol -->
+        <rect x="30" y="220" width="40" height="55" rx="6"/>
+        <line x1="42" y1="220" x2="42" y2="205"/>
+        <line x1="58" y1="220" x2="58" y2="205"/>
+        <!-- Wire coil -->
+        <path d="M250,220 C250,210 260,210 260,220 C260,230 270,230 270,220 C270,210 280,210 280,220 C280,230 290,230 290,220"/>
+      </g>
+    </svg>
+    <div class="hero-content">
+      <div class="hero-badges">
+        <span class="hero-badge">オーム社・秀和システムより3冊出版</span>
+        <span class="hero-badge">電気工事分野を教える現役の専門学校教員</span>
+      </div>
+      <h1>「見て覚えろ」の育成から脱却する。<br><em>御社専用の教育プログラム</em>を構築します。</h1>
+      <p class="hero-sub">新人が育たない、資格に受からない、ベテランが抜けたら現場が回らない。<br>その原因は人ではなく「育成の仕組み」がないことです。<br>13年間で5,000名超を指導してきた電気工事教育の専門家が、御社に合った教育体制をつくります。</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="hero-cta hero-cta-primary">無料ヒアリングに申し込む</a>
+        <a href="checklist.html" class="hero-cta hero-cta-secondary">育成体制を無料診断する</a>
+      </div>
+      <div class="hero-scroll-hint"><span></span></div>
+    </div>
+  </section>
+
+  <!-- ========== Stats Bar ========== -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">13<span>年</span></div>
+        <div class="stat-label">電気工事の教育指導歴</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5,000<span>名超</span></div>
+        <div class="stat-label">技能試験対策の指導実績</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3<span>冊</span></div>
+        <div class="stat-label">技術書の出版実績</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Problem ========== -->
+  <section class="problem" id="problem">
+    <div class="section-inner">
+      <div class="section-illust">
+        <!-- Illustration: worker with hard hat and question marks -->
+        <svg viewBox="0 0 180 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" stroke="#1a3a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Person silhouette -->
+            <circle cx="90" cy="42" r="16" fill="#e8f0fa"/>
+            <path d="M74,42 L74,32 Q74,22 84,22 L96,22 Q106,22 106,32 L106,38" fill="#D4A574" stroke="#D4A574" opacity="0.6"/>
+            <line x1="74" y1="38" x2="106" y2="38" stroke="#D4A574" stroke-width="2"/>
+            <path d="M90,58 L90,80"/>
+            <path d="M90,65 L72,78"/>
+            <path d="M90,65 L108,78"/>
+            <path d="M90,80 L75,110"/>
+            <path d="M90,80 L105,110"/>
+            <!-- Question marks -->
+            <text x="38" y="50" font-family="sans-serif" font-size="22" fill="#D4A574" stroke="none" font-weight="700">?</text>
+            <text x="130" y="40" font-family="sans-serif" font-size="18" fill="#2563a0" stroke="none" font-weight="700">?</text>
+            <text x="140" y="70" font-family="sans-serif" font-size="14" fill="#D4A574" stroke="none" opacity="0.6" font-weight="700">?</text>
+            <!-- Clipboard -->
+            <rect x="20" y="80" width="28" height="36" rx="3" fill="#fef3e8"/>
+            <line x1="26" y1="90" x2="42" y2="90"/>
+            <line x1="26" y1="96" x2="42" y2="96"/>
+            <line x1="26" y1="102" x2="36" y2="102"/>
+            <rect x="28" y="76" width="12" height="8" rx="2" fill="#D4A574" opacity="0.4"/>
+          </g>
+        </svg>
+      </div>
+      <p class="section-label">Problem</p>
+      <h2 class="section-title">電気工事の人材育成、こんな課題を抱えていませんか？</h2>
+      <p class="section-lead">建設・電気設備業界では、多くの企業が同じ壁にぶつかっています。</p>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="icon">&#9888;</div>
+          <h3>新人が戦力になるまでに時間がかかりすぎる</h3>
+          <p>OJT任せで体系的な教育プログラムがなく、指導者によって教え方がバラバラ。成長に2〜3年かかり、その間の人件費が経営を圧迫する。</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">&#9744;</div>
+          <h3>資格を取らせたいが、合格率が上がらない</h3>
+          <p>第二種電気工事士を社員に取得させたいが、効果的な学習支援の方法がわからない。「テキストを渡して自主学習」では限界がある。</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">&#9200;</div>
+          <h3>教え方が属人化している</h3>
+          <p>「あの先輩に聞かないとわからない」状態では、指導者が異動・退職した途端に教育が止まる。教え方が個人の経験頼みで、会社として再現できる仕組みになっていない。</p>
+        </div>
+      </div>
+
+      <!-- 比較表：Problem直後に配置して「なぜ自社研修か」を即理解させる -->
+      <div class="merit-compare" style="margin-top: 40px;">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>OJT任せ</th>
+              <th>メーカー研修・業界講習</th>
+              <th class="highlight-cell">自社専用の教育プログラム</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>自社の現場への適合</strong></td>
+              <td>指導者次第でバラつく</td>
+              <td>汎用的な内容のみ</td>
+              <td class="highlight-cell">完全にカスタマイズ</td>
+            </tr>
+            <tr>
+              <td><strong>教育の再現性</strong></td>
+              <td>属人的で再現困難</td>
+              <td>外部依存（毎回費用発生）</td>
+              <td class="highlight-cell">マニュアル化で誰でも実施可</td>
+            </tr>
+            <tr>
+              <td><strong>基礎教育の体系性</strong></td>
+              <td>指導者の経験頼み</td>
+              <td>スポット的で体系性なし</td>
+              <td class="highlight-cell">段階的に基礎を固め、OJTの質を底上げ</td>
+            </tr>
+            <tr>
+              <td><strong>教え方の標準化</strong></td>
+              <td>指導者次第で品質が変わる</td>
+              <td>外部任せで社内に残らない</td>
+              <td class="highlight-cell">マニュアル・チェックリストで標準化</td>
+            </tr>
+            <tr>
+              <td><strong>長期コスト</strong></td>
+              <td>見えにくい（機会損失大）</td>
+              <td>毎年の受講料が累積</td>
+              <td class="highlight-cell">初期投資後は低コストで運用</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Download Checklist ===== -->
+  <section class="download-checklist" id="checklist">
+    <div class="section-inner">
+      <div class="checklist-box">
+        <h3>御社の新人育成体制を5分で診断</h3>
+        <p>20の質問にチェックを入れるだけで、育成体制の現在地と改善のヒントがわかります。<br>診断後、結果レポートをメールでお受け取りいただけます。</p>
+        <a href="checklist.html" class="checklist-btn">無料で診断してみる</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Approach ===== -->
+  <section class="approach">
+    <div class="section-inner">
+      <div class="approach-box">
+        <div class="section-illust">
+          <!-- Illustration: blueprint / design document -->
+          <svg viewBox="0 0 180 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="#1a3a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Blueprint paper -->
+              <rect x="30" y="15" width="120" height="110" rx="4" fill="#e8f0fa"/>
+              <rect x="38" y="25" width="104" height="90" rx="2" fill="#fff" stroke="#2563a0" stroke-dasharray="4,3"/>
+              <!-- Grid lines -->
+              <line x1="38" y1="55" x2="142" y2="55" stroke="#2563a0" opacity="0.2"/>
+              <line x1="38" y1="85" x2="142" y2="85" stroke="#2563a0" opacity="0.2"/>
+              <line x1="90" y1="25" x2="90" y2="115" stroke="#2563a0" opacity="0.2"/>
+              <!-- Flowchart boxes -->
+              <rect x="62" y="32" width="56" height="16" rx="3" fill="#D4A574" opacity="0.3" stroke="#D4A574"/>
+              <rect x="48" y="60" width="36" height="14" rx="3" fill="#fef3e8" stroke="#D4A574" opacity="0.7"/>
+              <rect x="96" y="60" width="36" height="14" rx="3" fill="#fef3e8" stroke="#D4A574" opacity="0.7"/>
+              <rect x="62" y="92" width="56" height="16" rx="3" fill="#2563a0" opacity="0.15" stroke="#2563a0"/>
+              <!-- Arrows -->
+              <path d="M90,48 L66,60" stroke="#1a3a5c"/>
+              <path d="M90,48 L114,60" stroke="#1a3a5c"/>
+              <path d="M66,74 L90,92" stroke="#1a3a5c"/>
+              <path d="M114,74 L90,92" stroke="#1a3a5c"/>
+              <!-- Pencil -->
+              <g transform="translate(135,90) rotate(30)">
+                <rect x="0" y="0" width="6" height="32" rx="1" fill="#D4A574" stroke="#D4A574"/>
+                <polygon points="0,32 6,32 3,40" fill="#1a3a5c" stroke="#1a3a5c"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <p class="section-label">Approach</p>
+        <h3>問題は「教え方」ではなく「育成の仕組み」にあります</h3>
+        <p>どれだけ優秀な指導者がいても、カリキュラムが体系化されていなければ、育成は属人的になり再現性がありません。私は「未経験者を現場で通用する技術者に育てる」教育プログラムの設計を専門としています。設計した仕組みは御社の資産として残り、指導者が変わっても同じ品質の教育を継続できます。</p>
+        <p style="margin-top:16px; font-size:0.9rem; color:#1a3a5c; font-weight:600;">御社の現場を知っているのは、御社の方々です。</p>
+        <p style="font-size:0.88rem; color:#555; line-height:1.8;">御社オリジナルの教育プログラムをつくるには、教育担当者や現場責任者の方へのヒアリングが欠かせません。現場の実情・使用機材・工法・よくある失敗などを丁寧にお聞きした上で、御社に本当に合ったカリキュラムを設計します。「外注に丸投げ」ではなく「一緒につくる」プロセスです。</p>
+        <p style="margin-top:16px; font-size:0.9rem; color:#1a3a5c; font-weight:600;">対象が1人のときと20人のときでは、教え方がまったく変わります。</p>
+        <p style="font-size:0.88rem; color:#555; line-height:1.8;">たとえば1対1なら相手の理解度に合わせて柔軟に進められますが、10人・20人の研修では伝え方や演習の組み立て方をまったく変える必要があります。私は専門学校での集団指導と、講習会でのさまざまな規模の指導を13年間経験してきました。対象人数や受講者のレベルに応じた教え方の設計ができることも、教育プログラムの質を左右する重要なポイントです。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Merit ===== -->
+  <section class="merit" id="merit">
+    <div class="section-inner">
+      <div class="section-illust">
+        <!-- Illustration: growth / upward chart -->
+        <svg viewBox="0 0 180 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" stroke="#1a3a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Chart axes -->
+            <line x1="30" y1="110" x2="160" y2="110"/>
+            <line x1="30" y1="110" x2="30" y2="20"/>
+            <!-- Bar chart going up -->
+            <rect x="45" y="85" width="18" height="25" rx="2" fill="#e8f0fa" stroke="#2563a0" opacity="0.5"/>
+            <rect x="72" y="68" width="18" height="42" rx="2" fill="#e8f0fa" stroke="#2563a0" opacity="0.6"/>
+            <rect x="99" y="48" width="18" height="62" rx="2" fill="#fef3e8" stroke="#D4A574" opacity="0.7"/>
+            <rect x="126" y="30" width="18" height="80" rx="2" fill="#D4A574" stroke="#D4A574" opacity="0.5"/>
+            <!-- Trend line -->
+            <path d="M54,82 L81,65 L108,45 L135,27" stroke="#D4A574" stroke-width="2.5"/>
+            <!-- Arrow at end -->
+            <path d="M132,32 L138,25 L140,34" stroke="#D4A574" stroke-width="2"/>
+            <!-- People icons -->
+            <circle cx="54" cy="78" r="4" fill="#2563a0" opacity="0.3"/>
+            <circle cx="81" cy="58" r="4" fill="#2563a0" opacity="0.4"/>
+            <circle cx="108" cy="38" r="5" fill="#D4A574" opacity="0.5"/>
+          </g>
+        </svg>
+      </div>
+      <p class="section-label">Merit</p>
+      <h2 class="section-title">なぜ「自社専用の研修」を持つべきなのか</h2>
+      <p class="section-lead">メーカー研修や業界講習だけでは、御社固有の課題は解決できません。<br>自社に合った研修プログラムを持つことで、育成の質とスピードが変わります。</p>
+
+      <div class="merit-grid">
+        <div class="merit-card">
+          <div class="merit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563a0" stroke-width="1.5" stroke-linecap="round"><path d="M12,2 L12,22 M2,12 L22,12"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>自社の現場・工法に完全対応</h3>
+          <p>汎用的な外部研修では扱われない、御社特有の工法・使用機材・安全ルールに合わせたカリキュラムで学べます。現場に出た初日から「使える」知識が身につきます。</p>
+        </div>
+        <div class="merit-card">
+          <div class="merit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A574" stroke-width="1.5" stroke-linecap="round"><path d="M12,2 L15,8 L22,9 L17,14 L18,21 L12,18 L6,21 L7,14 L2,9 L9,8 Z"/></svg>
+          </div>
+          <h3>現場に出る前の「基礎」が確実に身につく</h3>
+          <p>研修だけで即戦力にはなりません。しかし、体系的な基礎教育を受けた新人と受けていない新人では、現場に出てからのOJTの吸収速度がまるで違います。基礎が固まっていれば、先輩の指導も効率的になります。</p>
+        </div>
+        <div class="merit-card">
+          <div class="merit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2e8b57" stroke-width="1.5" stroke-linecap="round"><path d="M17,21 L17,3 M7,21 L7,7 M12,21 L12,11"/><line x1="3" y1="21" x2="21" y2="21"/></svg>
+          </div>
+          <h3>教える人が変わっても品質が落ちない</h3>
+          <p>指導者マニュアルとチェックリストがあれば、誰が教えても同じ水準の教育ができます。「あの人がいないと教えられない」という属人化から脱却できます。</p>
+        </div>
+        <div class="merit-card">
+          <div class="merit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7b5ea7" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8,12 L11,15 L16,9"/></svg>
+          </div>
+          <h3>資格の合格率が上がる</h3>
+          <p>電気工事士などの資格取得を、個人の努力任せにしない仕組みが作れます。学習計画・模擬試験・フォロー体制をプログラム化すれば、合格率は大幅に向上します。</p>
+        </div>
+        <div class="merit-card">
+          <div class="merit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"><path d="M12,22 C12,22 3,16 3,10 C3,6 6,3 10,3 C11.5,3 12,4 12,4 C12,4 12.5,3 14,3 C18,3 21,6 21,10 C21,16 12,22 12,22Z"/></svg>
+          </div>
+          <h3>採用の武器になる</h3>
+          <p>「入社後の育成体制が整っている」ことは、求職者にとって大きな安心材料です。人手不足の業界で、教育体制の充実は他社との差別化になります。</p>
+        </div>
+        <div class="merit-card">
+          <div class="merit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563a0" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12,7 L12,12 L16,14"/></svg>
+          </div>
+          <h3>一度作れば何年も使える「資産」</h3>
+          <p>研修プログラムは一度設計すれば、毎年の新人教育に繰り返し使えます。たとえば外部研修に毎年1人5万円×5名＝25万円かけている場合、2〜3年で設計費用を回収でき、それ以降は大幅なコスト削減になります。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== Services ===== -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <p class="section-label">Services</p>
+      <h2 class="section-title">御社に合った「自走する育成体制」を設計します</h2>
+      <p class="section-lead">研修を「実施する」のではなく、御社の課題と現場に合わせた研修プログラムを「設計する」サービスです。</p>
+      <div class="service-list">
+        <div class="service-item">
+          <div class="service-num">01</div>
+          <div class="service-body">
+            <h3>新人教育カリキュラムの設計</h3>
+            <p>入社から独り立ちまでの段階別ロードマップを作成します。何を、どの順番で、どのレベルまで教えるか。現場の事情に合わせた実践的なカリキュラムを設計し、社内で運用できる形に落とし込みます。研修スライドや板書内容、指導者用マニュアルまで用意するので、講師役の方はマニュアル通りに説明するだけで研修を実施できます。</p>
+            <span class="service-deliverable">成果物：教育カリキュラム（段階別ロードマップ・時間割・学習目標） / 研修スライドまたは板書内容 / 理解度チェックリスト / 指導者用マニュアル（教え方の手順・よくある質問と対応例）</span>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-num">02</div>
+          <div class="service-body">
+            <h3>資格取得支援プログラムの構築</h3>
+            <p>第二種電気工事士をはじめとする技術系資格の学習支援体制を設計します。筆記は過去問の反復演習を中心に「量をこなして体に覚えさせる」スケジュールを組み、技能は試験課題の練習手順と時間配分を具体的にプログラム化。指導者に依存しない、再現性のある合格支援体制を構築します。</p>
+            <span class="service-deliverable">成果物：学習プログラム（学習スケジュール・教材リスト） / 進捗管理シート / 過去問演習計画・技能試験の練習メニュー</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Pricing ===== -->
+  <section class="pricing" id="pricing">
+    <div class="section-inner">
+      <div class="section-illust">
+        <!-- Illustration: pricing / calculator -->
+        <svg viewBox="0 0 180 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" stroke="#1a3a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Document stack -->
+            <rect x="22" y="28" width="70" height="90" rx="5" fill="#fef3e8" opacity="0.5"/>
+            <rect x="18" y="22" width="70" height="90" rx="5" fill="#fff"/>
+            <line x1="30" y1="40" x2="76" y2="40"/>
+            <line x1="30" y1="52" x2="76" y2="52"/>
+            <line x1="30" y1="64" x2="60" y2="64"/>
+            <line x1="30" y1="80" x2="76" y2="80" stroke="#D4A574" stroke-width="2"/>
+            <text x="30" y="98" font-family="sans-serif" font-size="10" fill="#1a3a5c" stroke="none" font-weight="700">¥</text>
+            <line x1="42" y1="92" x2="76" y2="92"/>
+            <!-- Yen coin -->
+            <circle cx="130" cy="70" r="30" fill="#fef3e8" stroke="#D4A574"/>
+            <circle cx="130" cy="70" r="24" fill="none" stroke="#D4A574" opacity="0.4"/>
+            <text x="121" y="78" font-family="sans-serif" font-size="22" fill="#D4A574" stroke="none" font-weight="800">¥</text>
+            <!-- Sparkle -->
+            <path d="M155,30 L157,36 L163,38 L157,40 L155,46 L153,40 L147,38 L153,36 Z" fill="#2563a0" stroke="none" opacity="0.4"/>
+          </g>
+        </svg>
+      </div>
+      <p class="section-label">Pricing</p>
+      <h2 class="section-title">料金体系</h2>
+      <p class="section-lead">研修プログラムの規模に応じたシンプルな料金体系です。<br>すべてのプランにヒアリング・課題診断・方針策定が含まれます。<br>初回の無料ヒアリング後に、正式なお見積もりをご提示します。</p>
+
+      <!-- 料金テーブル -->
+      <div class="pricing-block">
+        <p class="pricing-block-title"><span class="num">1</span>設計料金</p>
+        <p class="pricing-block-desc">設計する研修プログラムの期間・複雑さに応じて料金が変わります。<br>いずれのプランも、ヒアリング（2回以上）・課題整理・改善方針の策定を含みます。</p>
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>研修プログラムの規模</th>
+              <th>料金（税込）</th>
+              <th>設計期間</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>単発研修（1〜3日）</td>
+              <td class="price-cell">40万円</td>
+              <td class="period-cell">2〜3週間</td>
+            </tr>
+            <tr>
+              <td>短期プログラム（1週間〜1ヶ月）</td>
+              <td class="price-cell">60万円</td>
+              <td class="period-cell">1〜1.5ヶ月</td>
+            </tr>
+            <tr>
+              <td>中期プログラム（3〜6ヶ月）</td>
+              <td class="price-cell">85万円</td>
+              <td class="period-cell">1.5〜2ヶ月</td>
+            </tr>
+            <tr>
+              <td>年間教育体系（通年）</td>
+              <td class="price-cell">135万円</td>
+              <td class="period-cell">2〜3ヶ月</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- オプション -->
+      <div class="pricing-block">
+        <p class="pricing-block-title"><span class="num">2</span>オプション</p>
+        <p class="pricing-block-desc">必要に応じて組み合わせることができます。</p>
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>オプション内容</th>
+              <th>料金</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>資格取得支援プログラムの追加設計</td>
+              <td class="price-cell">+20万円</td>
+            </tr>
+            <tr>
+              <td>導入後フォローアップ（運用状況の確認・カリキュラム改善・質問対応）</td>
+              <td class="price-cell">+10万円/月</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pricing-cta-row">
+        <a href="#contact" class="pricing-cta">無料ヒアリングに申し込む</a>
+      </div>
+
+      <p class="pricing-disclaimer">※ 上記は標準的なケースの目安です。御社の規模・課題に応じて正式なお見積もりをご提示します。<br>※ 初回ヒアリング（約30分・オンライン）は無料です。<br>※ 設計した研修プログラムは毎年繰り返し使えます。外部研修に毎年費用をかけ続ける場合と比べ、2年目以降のコストを大幅に抑えられます。<br>※ 適格請求書発行事業者（インボイス）登録済みです。</p>
+    </div>
+  </section>
+
+  <!-- ========== Profile ===== -->
+  <section class="profile" id="profile">
+    <div class="section-inner">
+      <p class="section-label">Profile</p>
+      <h2 class="section-title">コンサルタント紹介</h2>
+      <div class="profile-box">
+        <div class="profile-header">
+          <div class="profile-icon">K</div>
+          <div class="profile-header-text">
+            <p class="profile-name">大木 健司</p>
+            <p class="profile-title">電気工事分野を教える現役の専門学校教員 ／ 技術書著者</p>
+          </div>
+        </div>
+        <p class="profile-text">
+          専門学校にて電気工事分野の教員として13年間、延べ約400名の学生を指導してきました。学生の就職率は100%。「まったくの未経験者を、現場で通用する技術者に育てる」ための教育プログラム設計が私の専門です。
+        </p>
+        <p class="profile-text">
+          専門学校での教育に加え、外部の第二種電気工事士技能試験対策講習会でも講師を務め、延べ5,000名超の受験者を指導してきました。その教育ノウハウをまとめた技術書をオーム社・秀和システムから計3冊出版。専門学校で培った「カリキュラム設計力」と「初心者を育てる技術」を、企業の研修設計に活かします。
+        </p>
+        <ul class="profile-credentials">
+          <li>専門学校 電気工事分野 主任教員 ／ 指導歴13年</li>
+          <li>第二種電気工事士 技能試験対策の指導実績：延べ5,000名超</li>
+          <li>技術書著者（オーム社、秀和システムより計3冊出版）</li>
+          <li>学生の就職率100%</li>
+        </ul>
+        <!-- 著書リスト（Profile内に統合） -->
+        <p style="font-size:0.82rem; font-weight:700; color:#1a3a5c; margin-top:24px; margin-bottom:12px;">著書</p>
+        <div class="book-list">
+          <a href="https://www.amazon.co.jp/dp/4274232212" target="_blank" rel="noopener" class="book-item" style="text-decoration:none;color:inherit;">
+            <div class="book-icon">&#128216;</div>
+            <div class="book-info">
+              <h3>「電気工事、マジわからん」と思ったときに読む本</h3>
+              <p>オーム社</p>
+            </div>
+          </a>
+          <a href="https://www.amazon.co.jp/dp/4798046477" target="_blank" rel="noopener" class="book-item" style="text-decoration:none;color:inherit;">
+            <div class="book-icon">&#128215;</div>
+            <div class="book-info">
+              <h3>図解入門 現場で役立つ第二種電気工事の基本と実際</h3>
+              <p>秀和システム</p>
+            </div>
+          </a>
+          <a href="https://www.amazon.co.jp/dp/B079Z1HTKT" target="_blank" rel="noopener" class="book-item" style="text-decoration:none;color:inherit;">
+            <div class="book-icon">&#128213;</div>
+            <div class="book-info">
+              <h3>図解入門 現場で役立つ 屋内配線図の基本と仕組み</h3>
+              <p>秀和システム ／ 共著</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Flow ===== -->
+  <section class="flow" id="flow">
+    <div class="section-inner">
+      <div class="section-illust">
+        <!-- Illustration: step-by-step process with connected nodes -->
+        <svg viewBox="0 0 180 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" stroke="#1a3a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Connecting line -->
+            <path d="M30,70 L150,70" stroke="#eaeef3" stroke-width="3"/>
+            <!-- Step 1: Mail icon -->
+            <circle cx="30" cy="70" r="16" fill="#e8f0fa" stroke="#2563a0"/>
+            <rect x="22" y="64" width="16" height="12" rx="2" fill="none" stroke="#2563a0"/>
+            <path d="M22,64 L30,72 L38,64" stroke="#2563a0"/>
+            <!-- Step 2: Chat/hearing icon -->
+            <circle cx="70" cy="70" r="16" fill="#fef3e8" stroke="#D4A574"/>
+            <rect x="62" y="63" width="14" height="10" rx="3" fill="none" stroke="#D4A574"/>
+            <path d="M68,73 L65,77" stroke="#D4A574"/>
+            <circle cx="66" cy="68" r="1" fill="#D4A574" stroke="none"/>
+            <circle cx="70" cy="68" r="1" fill="#D4A574" stroke="none"/>
+            <circle cx="74" cy="68" r="1" fill="#D4A574" stroke="none"/>
+            <!-- Step 3: Document/proposal icon -->
+            <circle cx="110" cy="70" r="16" fill="#e8f0fa" stroke="#2563a0"/>
+            <rect x="103" y="62" width="14" height="16" rx="2" fill="none" stroke="#2563a0"/>
+            <line x1="106" y1="67" x2="114" y2="67" stroke="#2563a0" stroke-width="1"/>
+            <line x1="106" y1="71" x2="114" y2="71" stroke="#2563a0" stroke-width="1"/>
+            <line x1="106" y1="75" x2="110" y2="75" stroke="#2563a0" stroke-width="1"/>
+            <!-- Step 4: Gear/start icon -->
+            <circle cx="150" cy="70" r="16" fill="#D4A574" opacity="0.15" stroke="#D4A574"/>
+            <circle cx="150" cy="70" r="7" fill="none" stroke="#D4A574"/>
+            <circle cx="150" cy="70" r="2.5" fill="#D4A574" stroke="none"/>
+            <line x1="150" y1="60" x2="150" y2="63" stroke="#D4A574"/>
+            <line x1="150" y1="77" x2="150" y2="80" stroke="#D4A574"/>
+            <line x1="140" y1="70" x2="143" y2="70" stroke="#D4A574"/>
+            <line x1="157" y1="70" x2="160" y2="70" stroke="#D4A574"/>
+            <!-- Step numbers -->
+            <text x="27" y="50" font-family="sans-serif" font-size="10" fill="#2563a0" stroke="none" font-weight="700">1</text>
+            <text x="67" y="50" font-family="sans-serif" font-size="10" fill="#D4A574" stroke="none" font-weight="700">2</text>
+            <text x="107" y="50" font-family="sans-serif" font-size="10" fill="#2563a0" stroke="none" font-weight="700">3</text>
+            <text x="147" y="50" font-family="sans-serif" font-size="10" fill="#D4A574" stroke="none" font-weight="700">4</text>
+            <!-- Arrow tips between circles -->
+            <path d="M46,70 L50,70 M48,67 L51,70 L48,73" stroke="#1a3a5c" opacity="0.4"/>
+            <path d="M86,70 L90,70 M88,67 L91,70 L88,73" stroke="#1a3a5c" opacity="0.4"/>
+            <path d="M126,70 L130,70 M128,67 L131,70 L128,73" stroke="#1a3a5c" opacity="0.4"/>
+          </g>
+        </svg>
+      </div>
+      <p class="section-label">Flow</p>
+      <h2 class="section-title">ご利用の流れ</h2>
+      <p class="section-lead">まずはお気軽にご相談ください。初回のヒアリングは無料です。</p>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="num">1</div>
+          <h3>お問い合わせ</h3>
+          <p>フォームよりお気軽にご連絡ください。</p>
+        </div>
+        <div class="flow-step">
+          <div class="num">2</div>
+          <h3>無料ヒアリング</h3>
+          <p>御社の課題と現状をオンラインでお聞きします（約30分）。</p>
+        </div>
+        <div class="flow-step">
+          <div class="num">3</div>
+          <h3>ご提案</h3>
+          <p>課題に合わせた研修設計プランと費用をご提示します。</p>
+        </div>
+        <div class="flow-step">
+          <div class="num">4</div>
+          <h3>設計・納品</h3>
+          <p>御社に合った研修プログラムを設計し、成果物一式を納品します。</p>
+        </div>
+        <div class="flow-step">
+          <div class="num">5</div>
+          <h3>導入サポート</h3>
+          <p>納品物の質問・軽微な修正は無料対応。運用後の改善サポートもオプションで可能です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="section-inner">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">よくある質問</h2>
+      <p class="section-lead">研修設計コンサルティングについてのよくあるご質問にお答えします。</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>研修設計コンサルティングとは、具体的に何をするのですか？</span>
+            <div class="faq-toggle">▼</div>
+          </div>
+          <div class="faq-answer">
+            御社の育成課題をヒアリングし、それに合った教育の仕組みをつくります。成果物は案件によって異なりますが、たとえば新人教育カリキュラムの場合、段階別ロードマップ・時間割・学習目標をまとめた教育カリキュラム、研修スライドや板書内容、理解度チェックリスト、教え方の手順やよくある質問への対応例をまとめた指導者用マニュアルなどを納品します。資格取得支援の場合は学習スケジュール・進捗管理シート・過去問演習計画なども含まれます。いずれも御社の現場でそのまま使えるドキュメント一式です。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>小規模な会社でも対応できますか？</span>
+            <div class="faq-toggle">▼</div>
+          </div>
+          <div class="faq-answer">
+            はい。むしろ小規模企業こそ、限られたリソースで効率的な育成体制が必要です。御社の規模・現場の状況に合わせた個別対応を行います。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>コンサルティング期間はどのくらいですか？</span>
+            <div class="faq-toggle">▼</div>
+          </div>
+          <div class="faq-answer">
+            研修の規模によって異なります。単発研修の設計なら2〜3週間、年間教育体系の設計なら2〜3ヶ月が目安です。オプションの導入後フォローアップを付ける場合は、運用開始後にさらに1〜3ヶ月ほど継続サポートを行います。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>費用の目安を教えてください。</span>
+            <div class="faq-toggle">▼</div>
+          </div>
+          <div class="faq-answer">
+            研修プログラムの規模に応じた料金体系です。単発研修（1〜3日）の設計なら40万円、年間教育体系の設計なら135万円が目安です。いずれもヒアリング・課題診断・方針策定を含みます。詳しくは料金体系のセクションをご覧ください。初回の無料ヒアリングで状況をお聞きした上で正式なお見積もりをご提示します。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>研修の「実施」もお願いできますか？</span>
+            <div class="faq-toggle">▼</div>
+          </div>
+          <div class="faq-answer">
+            本サービスは研修プログラムの「設計」に特化しています。研修スライドや板書内容、指導者用マニュアルまで用意するので、講師役の方がマニュアル通りに進めるだけで研修を実施できる状態にしてお渡しします。必要に応じて、実施フェーズでのアドバイスも可能です。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>納品後にうまくいかなかった場合はどうなりますか？</span>
+            <div class="faq-toggle">▼</div>
+          </div>
+          <div class="faq-answer">
+            納品物に関する質問や軽微な修正には無料で対応いたします。さらに、実際に運用を始めてから「ここを変えたい」「想定と違った」といった課題が出てきた場合は、オプションの導入後フォローアップをご利用ください。運用状況の確認・カリキュラムの改善・現場からの質問対応を継続的にサポートします。「納品して終わり」にはしません。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>社内で協力が必要な人はいますか？</span>
+            <div class="faq-toggle">▼</div>
+          </div>
+          <div class="faq-answer">
+            はい。御社の現場に合った教育プログラムをつくるために、教育担当者や現場責任者の方へのヒアリングをお願いしています。「普段どう教えているか」「新人がつまずきやすい作業は何か」といったことをお聞きします。ヒアリングはオンラインでも対応可能で、1回あたり1〜2時間程度です。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>オンラインでの対応は可能ですか？</span>
+            <div class="faq-toggle">▼</div>
+          </div>
+          <div class="faq-answer">
+            はい。ヒアリングから設計のお打ち合わせまで、すべてオンライン（Zoom等）で対応可能です。全国どこからでもご利用いただけます。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA Banner ===== -->
+  <section class="cta-banner">
+    <h2>まずは30分の無料ヒアリングから。<br>御社の育成課題を一緒に整理しましょう。</h2>
+    <p>「何から手をつければいいかわからない」という段階でもお気軽にどうぞ。</p>
+    <a href="#contact">無料ヒアリングに申し込む</a>
+  </section>
+
+  <!-- ========== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="section-lead">研修設計に関するご相談は、以下のフォームまたはメールからお気軽にどうぞ。<br>初回ヒアリング（約30分・オンライン）は無料です。<br><span style="color:#D4A574; font-weight:600;">✉ info@ohki-electric.com</span></p>
+      <form class="contact-form" id="contactForm" onsubmit="return submitContactForm(event)">
+        <div class="form-group">
+          <label for="contact-name">お名前（会社名）</label>
+          <input type="text" id="contact-name" name="name" placeholder="山田 太郎（株式会社○○）" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">メールアドレス</label>
+          <input type="email" id="contact-email" name="email" placeholder="example@company.co.jp" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">ご相談内容</label>
+          <textarea id="contact-message" name="message" placeholder="現在の育成に関するお悩みや、ご要望をお聞かせください。"></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="contactSubmitBtn">無料ヒアリングに申し込む</button>
+        <p class="form-note">※ 1〜2営業日以内にご返信します。まだ具体的でなくても大丈夫です。</p>
+        <div id="contactResult" style="display:none; margin-top:16px; padding:16px; border-radius:8px; text-align:center; font-size:14px;"></div>
+      </form>
+
+      <script>
+      var CONTACT_GAS_URL = 'https://script.google.com/macros/s/AKfycbyKdVzcxmCwQ0Ew37je_Z_UOknWevRnnnEotGjWYNYtMNhTHz1zIYmkDlhskiTSxOOC/exec';
+
+      function submitContactForm(e) {
+        e.preventDefault();
+        var btn = document.getElementById('contactSubmitBtn');
+        var result = document.getElementById('contactResult');
+        btn.disabled = true;
+        btn.textContent = '送信中...';
+        result.style.display = 'none';
+
+        var payload = {
+          type: 'contact',
+          name: document.getElementById('contact-name').value,
+          email: document.getElementById('contact-email').value,
+          message: document.getElementById('contact-message').value
+        };
+
+        fetch(CONTACT_GAS_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+        .then(function() {
+          result.style.display = 'block';
+          result.style.background = '#e8f5e9';
+          result.style.color = '#2e7d32';
+          result.innerHTML = '✓ 送信が完了しました。<br>確認メールをお送りしましたのでご確認ください。';
+          document.getElementById('contactForm').reset();
+          btn.textContent = '無料ヒアリングに申し込む';
+          btn.disabled = false;
+        })
+        .catch(function() {
+          result.style.display = 'block';
+          result.style.background = '#fce4ec';
+          result.style.color = '#c62828';
+          result.textContent = '送信に失敗しました。お手数ですが info@ohki-electric.com まで直接ご連絡ください。';
+          btn.textContent = '無料ヒアリングに申し込む';
+          btn.disabled = false;
+        });
+        return false;
+      }
+      </script>
+    </div>
+  </section>
+
+  <!-- ========== Footer ===== -->
+  <footer>
+    <p style="margin-bottom:6px;">✉ info@ohki-electric.com</p>
+    <p>&copy; 2026 電気工事 研修設計コンサルティング All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleFaq(element) {
+      const faqItem = element.parentElement;
+      faqItem.classList.toggle('open');
+    }
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Trigger initial check
+    window.dispatchEvent(new Event('scroll'));
+
+  </script>
+
+</body>
+</html>
