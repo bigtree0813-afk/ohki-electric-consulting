@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ベテラン職人の技術を「見える化」する方法——暗黙知を次世代に引き継ぐ3つのステップ｜電気工事 研修設計コンサルティング</title>
+  <meta name="description" content="電気工事のベテラン職人が持つ暗黙知を、次世代に確実に引き継ぐための「技術の見える化」手法を解説。作業分解・チェックシート・動画記録の3ステップで、属人的な技術を組織の財産に変える方法を、指導歴13年の教育専門家がお伝えします。">
+  <link rel="canonical" href="https://ohki-electric.com/blog/skill-visualization-methods.html" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ohki-electric.com/blog/skill-visualization-methods.html" />
+  <meta property="og:title" content="ベテラン職人の技術を「見える化」する方法——暗黙知を次世代に引き継ぐ3つのステップ" />
+  <meta property="og:description" content="電気工事のベテラン職人が持つ暗黙知を次世代に引き継ぐ「技術の見える化」手法を、指導歴13年の教育専門家が解説します。" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:site_name" content="電気工事 研修設計コンサルティング" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ベテラン職人の技術を「見える化」する方法——暗黙知を次世代に引き継ぐ3つのステップ" />
+  <meta name="twitter:description" content="ベテラン職人の暗黙知を次世代に引き継ぐ「技術の見える化」3ステップを解説。" />
+
+  <!-- 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "ベテラン職人の技術を「見える化」する方法——暗黙知を次世代に引き継ぐ3つのステップ",
+    "description": "電気工事のベテラン職人が持つ暗黙知を、次世代に確実に引き継ぐための「技術の見える化」手法を解説します。",
+    "author": {
+      "@type": "Person",
+      "name": "大木健司",
+      "jobTitle": "専門学校 電気工事分野 主任教員"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "電気工事 研修設計コンサルティング",
+      "url": "https://ohki-electric.com"
+    },
+    "datePublished": "2026-04-24",
+    "mainEntityOfPage": "https://ohki-electric.com/blog/skill-visualization-methods.html",
+    "keywords": ["電気工事", "技術継承", "見える化", "暗黙知", "ベテラン", "OJT", "技能伝承", "中小企業"]
+  }
+  </script>
+
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+      color: #2c2c2c;
+      background: #F9F7F4;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #2563a0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== Header / Nav ===== */
+    header {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1080px; margin: 0 auto;
+      padding: 14px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      letter-spacing: 0.02em;
+    }
+    .nav-logo a { color: #1a3a5c; text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      font-size: 0.85rem; color: #555; font-weight: 500;
+      transition: color 0.2s; text-decoration: none;
+    }
+    .nav-links a:hover { color: #1a3a5c; text-decoration: none; }
+
+    /* ===== Hamburger ===== */
+    .hamburger {
+      display: none; background: none; border: none; cursor: pointer;
+      width: 32px; height: 24px; position: relative;
+    }
+    .hamburger span {
+      display: block; width: 100%; height: 2px;
+      background: #1a3a5c; position: absolute; left: 0;
+      transition: all 0.3s;
+    }
+    .hamburger span:nth-child(1) { top: 0; }
+    .hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+    .hamburger span:nth-child(3) { bottom: 0; }
+
+    /* ===== Breadcrumb ===== */
+    .breadcrumb {
+      max-width: 780px; margin: 0 auto;
+      padding: 16px 24px 0;
+      font-size: 0.8rem; color: #888;
+    }
+    .breadcrumb a { color: #2563a0; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* ===== Article ===== */
+    .article-container {
+      max-width: 780px; margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    .article-meta {
+      margin-bottom: 24px;
+    }
+    .article-category {
+      display: inline-block;
+      background: #e8f0f8; color: #2563a0;
+      font-size: 0.75rem; font-weight: 700;
+      padding: 4px 12px; border-radius: 4px;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .article-date {
+      font-size: 0.8rem; color: #999;
+    }
+    .article-title {
+      font-size: 1.8rem; font-weight: 800; color: #1a3a5c;
+      line-height: 1.5; margin-bottom: 32px;
+    }
+    .article-title::after {
+      content: ""; display: block;
+      width: 48px; height: 3px; background: #D4A574;
+      margin-top: 16px;
+    }
+
+    .article-body h2 {
+      font-size: 1.3rem; font-weight: 700; color: #1a3a5c;
+      margin: 56px 0 20px;
+      padding-left: 16px;
+      border-left: 4px solid #D4A574;
+      line-height: 1.5;
+    }
+    .article-body h3 {
+      font-size: 1.1rem; font-weight: 700; color: #1a3a5c;
+      margin: 40px 0 16px;
+      line-height: 1.5;
+    }
+    .article-body p {
+      font-size: 0.95rem; color: #444; line-height: 2.0;
+      margin-bottom: 20px;
+    }
+    .article-body .lead {
+      font-size: 1.02rem; color: #555;
+      background: #fff;
+      border-radius: 8px;
+      padding: 24px 28px;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 40px;
+      line-height: 2.0;
+    }
+
+    /* ===== Highlight Box ===== */
+    .highlight-box {
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 10px; padding: 28px 28px 20px;
+      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .highlight-box h4 {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 12px;
+    }
+    .highlight-box ul {
+      list-style: none; padding: 0;
+    }
+    .highlight-box ul li {
+      font-size: 0.9rem; color: #555; line-height: 1.8;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+    .highlight-box ul li::before {
+      content: ""; position: absolute; left: 0; top: 14px;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #D4A574;
+    }
+
+    /* ===== Quote ===== */
+    .article-body blockquote {
+      border-left: 4px solid #D4A574;
+      background: #fdf8f3;
+      padding: 20px 24px;
+      margin: 28px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.93rem; color: #555;
+      line-height: 1.9;
+    }
+
+    /* ===== Number Section ===== */
+    .number-section {
+      display: flex; gap: 20px; align-items: flex-start;
+      margin: 32px 0;
+    }
+    .number-badge {
+      flex-shrink: 0;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: #1a3a5c; color: #fff;
+      font-size: 1rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .number-content h4 {
+      font-size: 1rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 8px;
+    }
+    .number-content p {
+      font-size: 0.9rem; color: #555;
+    }
+
+    /* ===== CTA Box ===== */
+    .article-cta {
+      background: linear-gradient(160deg, #0f2b45 0%, #1a3a5c 100%);
+      border-radius: 12px; padding: 48px 36px;
+      text-align: center; margin: 56px 0 0;
+    }
+    .article-cta h3 {
+      font-size: 1.2rem; font-weight: 700; color: #fff;
+      margin-bottom: 12px;
+    }
+    .article-cta p {
+      font-size: 0.9rem; color: rgba(255,255,255,0.7);
+      margin-bottom: 24px;
+    }
+    .article-cta a {
+      display: inline-block;
+      background: #D4A574; color: #0f2b45;
+      font-size: 0.95rem; font-weight: 600;
+      padding: 14px 36px; border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .article-cta a:hover { background: #C19660; text-decoration: none; }
+
+    /* ===== Author Box ===== */
+    .author-box {
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 12px; padding: 32px;
+      margin: 48px 0; display: flex; gap: 24px;
+      align-items: flex-start;
+    }
+    .author-icon {
+      flex-shrink: 0;
+      width: 64px; height: 64px; border-radius: 50%;
+      background: #1a3a5c; color: #fff;
+      font-size: 1.5rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .author-info h4 {
+      font-size: 1rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 4px;
+    }
+    .author-info .author-title {
+      font-size: 0.8rem; color: #888; margin-bottom: 10px;
+    }
+    .author-info p {
+      font-size: 0.85rem; color: #666; line-height: 1.8;
+    }
+
+    /* ===== Related Articles ===== */
+    .related-articles {
+      margin: 48px 0 0;
+    }
+    .related-articles h3 {
+      font-size: 1.1rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 20px;
+      padding-left: 16px;
+      border-left: 4px solid #D4A574;
+    }
+    .related-card {
+      display: block;
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 8px; padding: 20px 24px;
+      margin-bottom: 12px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .related-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+    .related-card-title {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 6px;
+    }
+    .related-card-desc {
+      font-size: 0.83rem; color: #888; line-height: 1.7;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #1a3a5c; color: rgba(255,255,255,0.7);
+      text-align: center; padding: 36px 24px;
+      font-size: 0.8rem;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .article-title { font-size: 1.4rem; }
+      .article-body h2 { font-size: 1.15rem; }
+      .hamburger { display: block; }
+      .nav-links {
+        display: none; position: absolute;
+        top: 56px; left: 0; width: 100%;
+        background: rgba(255,255,255,0.98);
+        flex-direction: column; padding: 20px 24px; gap: 16px;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+      .nav-links.open { display: flex; }
+      .author-box { flex-direction: column; align-items: center; text-align: center; }
+      .number-section { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="nav-logo"><a href="/">電気工事 研修設計コンサルティング</a></div>
+      <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="/#merit">メリット</a>
+        <a href="/#services">サービス</a>
+        <a href="/#pricing">料金</a>
+        <a href="/#profile">プロフィール</a>
+        <a href="/blog/">ブログ</a>
+        <a href="/#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="height: 56px;"></div>
+
+  <div class="breadcrumb">
+    <a href="/">ホーム</a><span>›</span>
+    <a href="/blog/">ブログ</a><span>›</span>
+    ベテラン職人の技術を「見える化」する方法
+  </div>
+
+  <article class="article-container">
+    <div class="article-meta">
+      <div class="article-category">技術継承・見える化</div>
+      <div class="article-date">2026年4月24日</div>
+    </div>
+    <h1 class="article-title">ベテラン職人の技術を「見える化」する方法<br>——暗黙知を次世代に引き継ぐ3つのステップ</h1>
+
+    <div class="article-body">
+      <div class="lead">
+        「あの職人さんが引退したら、うちの会社はどうなるんだろう」——電気工事業の中小企業を訪問すると、経営者の方からこうした不安を頻繁にお聞きします。ベテラン職人の頭と手の中にある技術は、長年の経験に裏打ちされた「暗黙知」です。言語化されていないからこそ価値がある一方、そのままでは人と一緒に会社から消えてしまいます。本記事では、13年間にわたり電気工事の教育カリキュラムを設計してきた経験をもとに、ベテランの技術を「見える化」し、組織の財産として次世代に引き継ぐための具体的な3つのステップをお伝えします。
+      </div>
+
+      <h2>なぜ「見える化」が必要なのか——技術継承の現実</h2>
+      <p>
+        電気工事の現場には、マニュアルには載っていない技術が数多く存在します。たとえば、天井裏でケーブルを配線するときの通線ワイヤーの「送り方」。図面を見て瞬時に最適な配線ルートを判断する力。あるいは、金属管の曲げ加工で「ちょうどいい角度」を出す手の感覚。こうした技術は、ベテラン職人が何十年もかけて身につけたものであり、本人にとっては「当たり前」になっているため、自ら言語化することが難しいのです。
+      </p>
+      <p>
+        建設業全体で高齢化が進む中、国土交通省の統計によれば55歳以上の技能労働者が全体の約35%を占めています。電気工事業も例外ではなく、今後10年で大量のベテランが引退する時期を迎えます。「背中を見て覚えろ」が通用した時代は、先輩と後輩が長い時間を共にすることで自然と技術が伝わりました。しかし現在は、現場ごとにチーム編成が変わり、同じ先輩から継続的に学べる環境は少なくなっています。
+      </p>
+      <p>
+        つまり、意図的に「見える化」の仕組みをつくらなければ、技術は確実に失われていくのです。
+      </p>
+
+      <h2>ステップ1：作業を「分解」して、カンとコツを洗い出す</h2>
+      <p>
+        見える化の第一歩は、ベテラン職人が普段やっている作業を細かく「分解」することです。専門学校の技能訓練では、この工程を「作業分解」と呼んでいます。
+      </p>
+
+      <h3>作業分解の具体的なやり方</h3>
+      <p>
+        たとえば「金属管のねじ切り」という作業があったとします。これを単に「パイプマシンでねじを切る」と捉えると、そこに含まれるカンやコツは埋もれたままです。しかし実際には、切削油の量を確認する、パイプの固定位置を調整する、ダイヘッドの送り速度を材質に応じて変える、切り始めと切り終わりで力加減を変える——といった複数のポイントが存在します。
+      </p>
+      <p>
+        やり方はシンプルです。ベテラン職人に作業をいつも通りやってもらい、横で観察しながら「今、何を意識しましたか？」「ここで手を止めた理由は？」と質問していきます。私の経験では、1つの作業につき30分〜1時間のインタビューで、本人も気づいていなかった5〜10個の「コツ」が言語化できます。
+      </p>
+
+      <blockquote>
+        ある会社で金属管の曲げ加工を分解したとき、ベテランの方が「音で分かる」とおっしゃいました。ベンダーで管を曲げる際、金属がきしむ音の変化で曲げ角度を判断していたのです。本人にとっては無意識の行動でしたが、これを「音が高くなったら曲げを止める」と言語化したことで、若手の習得スピードが格段に上がりました。
+      </blockquote>
+
+      <div class="highlight-box">
+        <h4>作業分解で引き出す「暗黙知」の例</h4>
+        <ul>
+          <li>通線作業で引っかかったときの「ワイヤーの角度の変え方」</li>
+          <li>VVFケーブルの被覆剥きで「力の入れ加減」を変える判断基準</li>
+          <li>盤内配線で「見た目がきれい」に仕上げるための結束バンドの間隔</li>
+          <li>活線作業時に周囲の状況を確認する「視線の動かし方」</li>
+          <li>KY活動（危険予知活動）でベテランが無意識にチェックしているポイント</li>
+        </ul>
+      </div>
+
+      <h2>ステップ2：「技能チェックシート」で到達基準を明文化する</h2>
+      <p>
+        作業を分解しただけでは、まだ「見える化」は半分です。次に必要なのは、洗い出したカンやコツを「どこまでできれば合格か」という到達基準に落とし込む作業です。
+      </p>
+
+      <h3>チェックシートの設計ポイント</h3>
+      <p>
+        専門学校では、技能検定の採点基準を参考にしながら、各作業に対して「できる／指導のもとできる／まだできない」の3段階で評価するチェックシートを使っています。これを企業のOJTに応用する場合、以下の3点を意識すると効果的です。
+      </p>
+
+      <div class="number-section">
+        <div class="number-badge">1</div>
+        <div class="number-content">
+          <h4>「完成品の状態」ではなく「プロセス」を評価する</h4>
+          <p>
+            結果だけを見て「合格・不合格」を判定するのではなく、「正しい手順で作業できているか」「安全確認を行っているか」というプロセスを評価項目に含めましょう。電気工事は安全が最優先の仕事です。たとえ結果が同じでも、検電を怠って作業したのでは意味がありません。プロセスを評価項目に入れることで、安全意識の醸成にもつながります。
+          </p>
+        </div>
+      </div>
+
+      <div class="number-section">
+        <div class="number-badge">2</div>
+        <div class="number-content">
+          <h4>時間軸を入れて「成長の道筋」を示す</h4>
+          <p>
+            「入社3ヶ月で○○ができる」「6ヶ月で△△を単独で任せられる」という時間軸をセットにすることで、新人にとっては成長のロードマップになり、指導者にとっては育成の進捗管理ツールになります。<a href="/blog/why-newcomers-quit.html">以前の記事</a>でも触れましたが、「成長の道筋が見えない」ことは新人離職の大きな原因の一つです。チェックシートは、この課題に対する具体的な解決策でもあります。
+          </p>
+        </div>
+      </div>
+
+      <div class="number-section">
+        <div class="number-badge">3</div>
+        <div class="number-content">
+          <h4>指導者全員が「同じ基準」で評価できるようにする</h4>
+          <p>
+            チェックシートは、新人だけでなく指導者のためのツールでもあります。「Aさんは厳しくてBさんは甘い」という評価のばらつきは、<a href="/blog/3-pitfalls-of-training.html">育成体制の落とし穴</a>としてよく見られるパターンです。チェックシートに具体的な判定基準（「○mm以内の誤差」「○秒以内に完了」など）を明記しておくことで、誰が評価しても同じ結果になる仕組みがつくれます。
+          </p>
+        </div>
+      </div>
+
+      <h2>ステップ3：「動画記録」でカンとコツを視覚的に残す</h2>
+      <p>
+        チェックシートで「何を・どこまで」を明文化したら、最後のステップは「どうやって」を視覚的に記録することです。ここで力を発揮するのが動画です。
+      </p>
+
+      <h3>スマートフォン1台で始められる</h3>
+      <p>
+        「動画制作」と聞くと大がかりに感じるかもしれませんが、プロの映像クオリティは必要ありません。現場でスマートフォンを使って3〜5分の短い動画を撮影するだけで十分です。大切なのは、ベテラン職人の「手元の動き」と「そのときの判断基準」を同時に記録することです。
+      </p>
+      <p>
+        撮影のポイントは、作業の全体像ではなく「カンやコツが発揮される瞬間」にフォーカスすること。たとえば通線作業なら、ワイヤーが引っかかったときにベテランがどう対処するかの「手元アップ」を撮ります。そして撮影後、ベテランに「今なぜそうしたのか」を一言コメントしてもらう。この「作業＋解説」のセットが、最も学習効果の高い動画教材になります。
+      </p>
+
+      <h3>動画ライブラリの整備が資産になる</h3>
+      <p>
+        撮影した動画は、作業カテゴリごとに整理してライブラリ化します。たとえば「配管作業」「配線作業」「器具取付」「検査・測定」のように分類し、新人がいつでもアクセスできる状態にしておきます。クラウドの共有フォルダに入れておけば、現場でもスマートフォンから確認できます。
+      </p>
+      <p>
+        私が技能五輪の選手指導を行っていた際にも、選手のフォームを動画で記録し、良いときと悪いときの比較を繰り返すことで技術の精度を高めていました。同じ手法が、企業の現場教育にもそのまま応用できます。
+      </p>
+
+      <blockquote>
+        動画は「一度つくれば何人にでも教えられる教材」です。ベテランが毎回同じことを教える手間がなくなり、指導者の負担軽減にも直結します。これは、<a href="/blog/3-pitfalls-of-training.html">指導者が疲弊する問題</a>への実践的な対策でもあるのです。
+      </blockquote>
+
+      <h2>「見える化」は一人ではできない——経営者の役割</h2>
+      <p>
+        ここまで3つのステップをお伝えしてきましたが、正直に申し上げると、見える化の取り組みを現場任せにしてもうまくいきません。ベテラン職人は日々の現場作業で忙しく、「自分の技術を言語化する時間」を自ら確保することは難しいからです。
+      </p>
+      <p>
+        経営者・管理者の方にお願いしたいのは、見える化のための「時間と場」を明確に設けることです。たとえば月に1回、半日だけ「技術継承の日」をつくり、ベテランと若手がペアで作業分解に取り組む時間を確保する。あるいは、朝礼の5分を使って「今日のワンポイント動画」を共有する。こうした小さな仕組みの積み重ねが、会社全体の技術レベルを底上げしていきます。
+      </p>
+      <p>
+        技術の見える化は、ベテランの退職に備えるだけの「守り」の施策ではありません。組織として技術を蓄積し、誰が入社しても一定水準まで育てられる仕組みをつくることは、会社の競争力そのものを高める「攻め」の投資です。
+      </p>
+
+      <h2>まとめ：3つのステップで技術を組織の財産に</h2>
+      <p>
+        ベテラン職人の技術を見える化するための3つのステップを整理します。まず「作業分解」でベテランの暗黙知を言語化し、次に「技能チェックシート」で到達基準を明文化し、最後に「動画記録」で視覚的に残す。この3つを順に進めることで、属人的だった技術が組織の共有財産に変わります。
+      </p>
+      <p>
+        「何から手をつけていいかわからない」という場合は、まず1つの作業だけで構いません。御社で最も「あの人にしかできない」と思われている作業を1つ選び、そこから始めてみてください。
+      </p>
+      <p>
+        「うちの会社に合ったやり方で進めたい」と思われた方は、ぜひ一度お話しさせてください。御社の技術体系に合わせた見える化の進め方を、一緒に設計していきましょう。
+      </p>
+
+      <!-- Related Articles -->
+      <div class="related-articles">
+        <h3>関連記事</h3>
+        <a class="related-card" href="/blog/why-newcomers-quit.html">
+          <div class="related-card-title">なぜ電気工事の新人は辞めるのか？離職率を下げる育成の考え方</div>
+          <div class="related-card-desc">新人が辞める3つの本質的な理由と、定着率を改善するための育成体制のポイントを解説。</div>
+        </a>
+        <a class="related-card" href="/blog/3-pitfalls-of-training.html">
+          <div class="related-card-title">電気工事の育成体制で陥りやすい3つの落とし穴</div>
+          <div class="related-card-desc">マニュアルが使われない、指導者が疲弊する、研修が形骸化する——よくある失敗パターンと処方箋。</div>
+        </a>
+      </div>
+
+      <!-- Author Box -->
+      <div class="author-box">
+        <div class="author-icon">大</div>
+        <div class="author-info">
+          <h4>大木 健司</h4>
+          <div class="author-title">専門学校 電気工事分野 主任教員 ／ 研修設計コンサルタント</div>
+          <p>
+            指導歴13年、延べ5,000名超の電気工事士を育成。技能五輪全国大会の選手指導やWorldSkills国際大会デプティチーフエキスパートの経験を持つ。著書に「電気工事、マジわからん」と思ったときに読む本（オーム社）ほか。
+          </p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="article-cta">
+        <h3>御社の技術継承、仕組みから一緒に考えませんか？</h3>
+        <p>初回ヒアリング（約30分・オンライン）は無料です。<br>「ベテランの引退が近いが何も準備できていない」という段階でもお気軽にどうぞ。</p>
+        <a href="/#contact">無料ヒアリングに申し込む</a>
+      </div>
+
+    </div>
+  </article>
+
+  <footer>
+    <p style="margin-bottom:6px;">✉ info@ohki-electric.com</p>
+    <p>&copy; 2026 電気工事 研修設計コンサルティング All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
