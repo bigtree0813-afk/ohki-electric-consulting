@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>なぜ電気工事の新人は辞めるのか？離職率を下げる育成の考え方｜電気工事 研修設計コンサルティング</title>
+  <meta name="description" content="電気工事業界の新人離職率が高い原因を、指導歴13年の教育専門家が分析。「背中を見て覚えろ」式OJTの限界と、定着率を改善する育成体制の設計ポイントを解説します。">
+  <link rel="canonical" href="https://ohki-electric.com/blog/why-newcomers-quit.html" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ohki-electric.com/blog/why-newcomers-quit.html" />
+  <meta property="og:title" content="なぜ電気工事の新人は辞めるのか？離職率を下げる育成の考え方" />
+  <meta property="og:description" content="電気工事業界の新人離職率が高い原因を、指導歴13年の教育専門家が分析。定着率を改善する育成体制の設計ポイントを解説します。" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:site_name" content="電気工事 研修設計コンサルティング" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="なぜ電気工事の新人は辞めるのか？離職率を下げる育成の考え方" />
+  <meta name="twitter:description" content="電気工事業界の新人離職率が高い原因と、定着率を改善する育成体制の設計ポイントを解説。" />
+
+  <!-- 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "なぜ電気工事の新人は辞めるのか？離職率を下げる育成の考え方",
+    "description": "電気工事業界の新人離職率が高い原因を分析し、定着率を改善する育成体制の設計ポイントを解説します。",
+    "author": {
+      "@type": "Person",
+      "name": "大木健司",
+      "jobTitle": "専門学校 電気工事分野 主任教員"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "電気工事 研修設計コンサルティング",
+      "url": "https://ohki-electric.com"
+    },
+    "datePublished": "2026-04-24",
+    "mainEntityOfPage": "https://ohki-electric.com/blog/why-newcomers-quit.html",
+    "keywords": ["電気工事", "新人", "離職", "育成", "OJT", "教育プログラム"]
+  }
+  </script>
+
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+      color: #2c2c2c;
+      background: #F9F7F4;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #2563a0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== Header / Nav ===== */
+    header {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1080px; margin: 0 auto;
+      padding: 14px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      letter-spacing: 0.02em;
+    }
+    .nav-logo a { color: #1a3a5c; text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      font-size: 0.85rem; color: #555; font-weight: 500;
+      transition: color 0.2s; text-decoration: none;
+    }
+    .nav-links a:hover { color: #1a3a5c; text-decoration: none; }
+
+    /* ===== Hamburger ===== */
+    .hamburger {
+      display: none; background: none; border: none; cursor: pointer;
+      width: 32px; height: 24px; position: relative;
+    }
+    .hamburger span {
+      display: block; width: 100%; height: 2px;
+      background: #1a3a5c; position: absolute; left: 0;
+      transition: all 0.3s;
+    }
+    .hamburger span:nth-child(1) { top: 0; }
+    .hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+    .hamburger span:nth-child(3) { bottom: 0; }
+
+    /* ===== Breadcrumb ===== */
+    .breadcrumb {
+      max-width: 780px; margin: 0 auto;
+      padding: 16px 24px 0;
+      font-size: 0.8rem; color: #888;
+    }
+    .breadcrumb a { color: #2563a0; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* ===== Article ===== */
+    .article-container {
+      max-width: 780px; margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    .article-meta {
+      margin-bottom: 24px;
+    }
+    .article-category {
+      display: inline-block;
+      background: #e8f0f8; color: #2563a0;
+      font-size: 0.75rem; font-weight: 700;
+      padding: 4px 12px; border-radius: 4px;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .article-date {
+      font-size: 0.8rem; color: #999;
+    }
+    .article-title {
+      font-size: 1.8rem; font-weight: 800; color: #1a3a5c;
+      line-height: 1.5; margin-bottom: 32px;
+    }
+    .article-title::after {
+      content: ""; display: block;
+      width: 48px; height: 3px; background: #D4A574;
+      margin-top: 16px;
+    }
+
+    .article-body h2 {
+      font-size: 1.3rem; font-weight: 700; color: #1a3a5c;
+      margin: 56px 0 20px;
+      padding-left: 16px;
+      border-left: 4px solid #D4A574;
+      line-height: 1.5;
+    }
+    .article-body h3 {
+      font-size: 1.1rem; font-weight: 700; color: #1a3a5c;
+      margin: 40px 0 16px;
+      line-height: 1.5;
+    }
+    .article-body p {
+      font-size: 0.95rem; color: #444; line-height: 2.0;
+      margin-bottom: 20px;
+    }
+    .article-body .lead {
+      font-size: 1.02rem; color: #555;
+      background: #fff;
+      border-radius: 8px;
+      padding: 24px 28px;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 40px;
+      line-height: 2.0;
+    }
+
+    /* ===== Highlight Box ===== */
+    .highlight-box {
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 10px; padding: 28px 28px 20px;
+      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .highlight-box h4 {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 12px;
+    }
+    .highlight-box ul {
+      list-style: none; padding: 0;
+    }
+    .highlight-box ul li {
+      font-size: 0.9rem; color: #555; line-height: 1.8;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+    .highlight-box ul li::before {
+      content: ""; position: absolute; left: 0; top: 14px;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #D4A574;
+    }
+
+    /* ===== Quote ===== */
+    .article-body blockquote {
+      border-left: 4px solid #D4A574;
+      background: #fdf8f3;
+      padding: 20px 24px;
+      margin: 28px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.93rem; color: #555;
+      line-height: 1.9;
+    }
+
+    /* ===== Number Section ===== */
+    .number-section {
+      display: flex; gap: 20px; align-items: flex-start;
+      margin: 32px 0;
+    }
+    .number-badge {
+      flex-shrink: 0;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: #1a3a5c; color: #fff;
+      font-size: 1rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .number-content h4 {
+      font-size: 1rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 8px;
+    }
+    .number-content p {
+      font-size: 0.9rem; color: #555;
+    }
+
+    /* ===== CTA Box ===== */
+    .article-cta {
+      background: linear-gradient(160deg, #0f2b45 0%, #1a3a5c 100%);
+      border-radius: 12px; padding: 48px 36px;
+      text-align: center; margin: 56px 0 0;
+    }
+    .article-cta h3 {
+      font-size: 1.2rem; font-weight: 700; color: #fff;
+      margin-bottom: 12px;
+    }
+    .article-cta p {
+      font-size: 0.9rem; color: rgba(255,255,255,0.7);
+      margin-bottom: 24px;
+    }
+    .article-cta a {
+      display: inline-block;
+      background: #D4A574; color: #0f2b45;
+      font-size: 0.95rem; font-weight: 600;
+      padding: 14px 36px; border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .article-cta a:hover { background: #C19660; text-decoration: none; }
+
+    /* ===== Author Box ===== */
+    .author-box {
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 12px; padding: 32px;
+      margin: 48px 0; display: flex; gap: 24px;
+      align-items: flex-start;
+    }
+    .author-icon {
+      flex-shrink: 0;
+      width: 64px; height: 64px; border-radius: 50%;
+      background: #1a3a5c; color: #fff;
+      font-size: 1.5rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .author-info h4 {
+      font-size: 1rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 4px;
+    }
+    .author-info .author-title {
+      font-size: 0.8rem; color: #888; margin-bottom: 10px;
+    }
+    .author-info p {
+      font-size: 0.85rem; color: #666; line-height: 1.8;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #1a3a5c; color: rgba(255,255,255,0.7);
+      text-align: center; padding: 36px 24px;
+      font-size: 0.8rem;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .article-title { font-size: 1.4rem; }
+      .article-body h2 { font-size: 1.15rem; }
+      .hamburger { display: block; }
+      .nav-links {
+        display: none; position: absolute;
+        top: 56px; left: 0; width: 100%;
+        background: rgba(255,255,255,0.98);
+        flex-direction: column; padding: 20px 24px; gap: 16px;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+      .nav-links.open { display: flex; }
+      .author-box { flex-direction: column; align-items: center; text-align: center; }
+      .number-section { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="nav-logo"><a href="/">電気工事 研修設計コンサルティング</a></div>
+      <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="/#merit">メリット</a>
+        <a href="/#services">サービス</a>
+        <a href="/#pricing">料金</a>
+        <a href="/#profile">プロフィール</a>
+        <a href="/blog/">ブログ</a>
+        <a href="/#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="height: 56px;"></div>
+
+  <div class="breadcrumb">
+    <a href="/">ホーム</a><span>›</span>
+    <a href="/blog/">ブログ</a><span>›</span>
+    なぜ電気工事の新人は辞めるのか？
+  </div>
+
+  <article class="article-container">
+    <div class="article-meta">
+      <div class="article-category">育成・離職対策</div>
+      <div class="article-date">2026年4月24日</div>
+    </div>
+    <h1 class="article-title">なぜ電気工事の新人は辞めるのか？<br>離職率を下げる育成の考え方</h1>
+
+    <div class="article-body">
+      <div class="lead">
+        「せっかく採用した新人が1年も持たずに辞めてしまう」——電気工事業界では、こうした声が後を絶ちません。厚生労働省の調査でも、建設業全体の若年者（入社3年以内）離職率は約45%。電気工事分野も例外ではなく、慢性的な人手不足の一因となっています。本記事では、13年間にわたり延べ5,000名超の電気工事士を指導してきた経験をもとに、新人が辞める「本当の原因」と、離職率を改善するための育成体制の考え方をお伝えします。
+      </div>
+
+      <h2>「背中を見て覚えろ」はもう通用しない</h2>
+      <p>
+        電気工事の現場では、いまだに「先輩の動きを見て盗め」という指導スタイルが根強く残っています。ベテラン職人の方々が自身の経験からそう言うのは自然なことですし、かつてはそれで人が育った時代もありました。
+      </p>
+      <p>
+        しかし、現在の若手にとって、この指導法は「何を学べばいいのかわからない」「自分が成長しているのか実感できない」という不安に直結します。結果として、「ここにいても先が見えない」と感じ、早期に離職してしまうのです。
+      </p>
+      <p>
+        これは若手の忍耐力の問題ではありません。職場環境や労働市場の変化に、育成の仕組みが追いついていないことが根本的な原因です。
+      </p>
+
+      <h2>新人が辞める3つの本質的な理由</h2>
+      <p>
+        多くの企業を見てきた中で、新人が辞める理由は大きく3つに集約されます。
+      </p>
+
+      <div class="number-section">
+        <div class="number-badge">1</div>
+        <div class="number-content">
+          <h4>成長の道筋が見えない</h4>
+          <p>
+            「いつまでに何ができるようになればいいのか」が明示されていない職場では、新人は漠然とした不安を抱え続けます。3ヶ月後、半年後、1年後に自分がどうなっているのか想像できなければ、目の前の辛さだけが残ります。教育カリキュラムや技能の到達目標がないことは、新人にとって「自分はここで成長できないかもしれない」というメッセージと同義です。
+          </p>
+        </div>
+      </div>
+
+      <div class="number-section">
+        <div class="number-badge">2</div>
+        <div class="number-content">
+          <h4>指導者によってやり方がバラバラ</h4>
+          <p>
+            Aさんに教わったやり方でやったらBさんに怒られた——こんな経験が積み重なると、新人は「何が正解かわからない」と萎縮してしまいます。指導方法が標準化されていなければ、新人は技術を学ぶ以前に「誰の言うことを聞けばいいか」で消耗します。これはOJTの仕組みの問題であり、個々の指導者の問題ではありません。
+          </p>
+        </div>
+      </div>
+
+      <div class="number-section">
+        <div class="number-badge">3</div>
+        <div class="number-content">
+          <h4>「聞ける空気」がない</h4>
+          <p>
+            現場は忙しく、先輩に気軽に質問できる雰囲気ではないことが少なくありません。わからないことがあっても聞けず、失敗して叱られる——この悪循環に入ると、新人のモチベーションは急速に低下します。心理的安全性の確保は、技術教育と同じくらい重要な育成の土台です。
+          </p>
+        </div>
+      </div>
+
+      <h2>離職率を改善する育成体制のポイント</h2>
+      <p>
+        では、どうすれば新人の定着率を改善できるのでしょうか。私がこれまで多くの企業と取り組んできた中で、効果が出やすいポイントを3つご紹介します。
+      </p>
+
+      <h3>① 技能マップと到達目標を「見える化」する</h3>
+      <p>
+        新人が「今の自分の立ち位置」と「次に目指すべきレベル」を把握できる仕組みをつくることが第一歩です。たとえば、「入社3ヶ月で電線の被覆剥きと圧着接続が単独でできる」「6ヶ月でVVFケーブルの配線作業を一通り任せられる」といった具体的な到達目標があれば、新人は自分の成長を実感できます。
+      </p>
+      <p>
+        専門学校のカリキュラムでも、私たちは技能到達チェックシートを使って学生の習熟度を段階的に評価しています。これを企業のOJTに応用するだけで、「何をいつまでに覚えればいいか」が明確になります。
+      </p>
+
+      <h3>② 指導内容を標準化する仕組みをつくる</h3>
+      <p>
+        「教え方がバラバラ」問題を解決するには、作業手順書や指導マニュアルの整備が不可欠です。ただし、分厚いマニュアルをつくる必要はありません。まずは主要な作業5〜10項目について「この順番で、このポイントを押さえて教える」というA4一枚の指導シートをつくるところから始めれば十分です。
+      </p>
+      <p>
+        大切なのは、指導者全員が同じ基準で教えられる環境を整えること。これにより、新人は安心して技術の習得に集中できるようになります。
+      </p>
+
+      <h3>③ 定期的な「振り返りの場」を設ける</h3>
+      <p>
+        週に1回、10〜15分でも構いません。新人と指導者が1対1で「今週できるようになったこと」「困っていること」を話す時間を設けてください。この小さな習慣が、新人の「聞ける空気」をつくり、問題の早期発見につながります。
+      </p>
+      <p>
+        振り返りの場は、新人にとって「自分を見てもらえている」という安心感を生みます。技術指導だけでなく、こうした心理面のケアが定着率に大きく影響することは、教育現場でも企業でも共通しています。
+      </p>
+
+      <h2>「育成の仕組み」は投資である</h2>
+      <p>
+        新人が1人辞めるたびに、採用コスト、教育に費やした時間、現場の士気低下——さまざまなコストが発生します。ある試算では、新人1人の離職による損失は年収の50〜200%に相当するとも言われています。
+      </p>
+      <p>
+        一方で、育成体制をしっかり設計すれば、新人の定着率が向上するだけでなく、指導者側の負担軽減、作業品質の安定、さらには会社全体の技術力の底上げにもつながります。育成の仕組みづくりは「コスト」ではなく「投資」なのです。
+      </p>
+
+      <blockquote>
+        教育プログラムの設計は、一度つくれば終わりではありません。現場の声を聞きながら改善し続けることで、その会社ならではの「育つ文化」が根付いていきます。
+      </blockquote>
+
+      <h2>まとめ：新人が辞めるのは「仕組み」の問題</h2>
+      <p>
+        電気工事の新人が早期に辞めてしまう背景には、個人の資質よりも育成体制の構造的な課題があります。成長の道筋の見える化、指導方法の標準化、心理的安全性の確保——この3つを軸に育成の仕組みを見直すことで、離職率は確実に改善できます。
+      </p>
+      <p>
+        「うちの会社の場合はどうすればいいんだろう？」と思われた方は、ぜひお気軽にご相談ください。御社の現状に合わせた育成体制の設計を、一緒に考えていきましょう。
+      </p>
+
+      <!-- Author Box -->
+      <div class="author-box">
+        <div class="author-icon">大</div>
+        <div class="author-info">
+          <h4>大木 健司</h4>
+          <div class="author-title">専門学校 電気工事分野 主任教員 ／ 研修設計コンサルタント</div>
+          <p>
+            指導歴13年、延べ5,000名超の電気工事士を育成。技能五輪全国大会の選手指導やWorldSkills国際大会デプティチーフエキスパートの経験を持つ。著書に「電気工事、マジわからん」と思ったときに読む本（オーム社）ほか。
+          </p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="article-cta">
+        <h3>御社の育成課題、一緒に整理しませんか？</h3>
+        <p>初回ヒアリング（約30分・オンライン）は無料です。<br>「何から始めればいいかわからない」段階でもお気軽にどうぞ。</p>
+        <a href="/#contact">無料ヒアリングに申し込む</a>
+      </div>
+
+    </div>
+  </article>
+
+  <footer>
+    <p style="margin-bottom:6px;">✉ info@ohki-electric.com</p>
+    <p>&copy; 2026 電気工事 研修設計コンサルティング All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
