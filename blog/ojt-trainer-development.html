@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「教える側」を育てていますか？電気工事のOJT指導者に必要な3つの力｜電気工事 研修設計コンサルティング</title>
+  <meta name="description" content="電気工事のOJTがうまくいかない原因は「指導者の育成不足」にあります。現場で教える側に必要な3つの力と、中小企業でも実践できる指導者育成の仕組みを、指導歴13年の教育専門家が解説します。">
+  <link rel="canonical" href="https://ohki-electric.com/blog/ojt-trainer-development.html" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ohki-electric.com/blog/ojt-trainer-development.html" />
+  <meta property="og:title" content="「教える側」を育てていますか？電気工事のOJT指導者に必要な3つの力" />
+  <meta property="og:description" content="OJTがうまくいかない原因は指導者の育成不足。現場で教える側に必要な3つの力と、中小企業でも実践できる指導者育成の仕組みを解説します。" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:site_name" content="電気工事 研修設計コンサルティング" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="「教える側」を育てていますか？電気工事のOJT指導者に必要な3つの力" />
+  <meta name="twitter:description" content="OJTがうまくいかない原因は指導者の育成不足。中小企業でも実践できる指導者育成の仕組みを解説。" />
+
+  <!-- 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "「教える側」を育てていますか？電気工事のOJT指導者に必要な3つの力",
+    "description": "電気工事のOJTがうまくいかない原因は「指導者の育成不足」にあります。現場で教える側に必要な3つの力と、中小企業でも実践できる指導者育成の仕組みを解説します。",
+    "author": {
+      "@type": "Person",
+      "name": "大木健司",
+      "jobTitle": "専門学校 電気工事分野 主任教員"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "電気工事 研修設計コンサルティング",
+      "url": "https://ohki-electric.com"
+    },
+    "datePublished": "2026-05-01",
+    "mainEntityOfPage": "https://ohki-electric.com/blog/ojt-trainer-development.html",
+    "keywords": ["電気工事", "OJT", "指導者育成", "教え方", "人材育成", "中小企業", "研修設計"]
+  }
+  </script>
+
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+      color: #2c2c2c;
+      background: #F9F7F4;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #2563a0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== Header / Nav ===== */
+    header {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid #e0e0e0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1080px; margin: 0 auto;
+      padding: 14px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      letter-spacing: 0.02em;
+    }
+    .nav-logo a { color: #1a3a5c; text-decoration: none; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      font-size: 0.85rem; color: #555; font-weight: 500;
+      transition: color 0.2s; text-decoration: none;
+    }
+    .nav-links a:hover { color: #1a3a5c; text-decoration: none; }
+
+    /* ===== Hamburger ===== */
+    .hamburger {
+      display: none; background: none; border: none; cursor: pointer;
+      width: 32px; height: 24px; position: relative;
+    }
+    .hamburger span {
+      display: block; width: 100%; height: 2px;
+      background: #1a3a5c; position: absolute; left: 0;
+      transition: all 0.3s;
+    }
+    .hamburger span:nth-child(1) { top: 0; }
+    .hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+    .hamburger span:nth-child(3) { bottom: 0; }
+
+    /* ===== Breadcrumb ===== */
+    .breadcrumb {
+      max-width: 780px; margin: 0 auto;
+      padding: 16px 24px 0;
+      font-size: 0.8rem; color: #888;
+    }
+    .breadcrumb a { color: #2563a0; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* ===== Article ===== */
+    .article-container {
+      max-width: 780px; margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    .article-meta {
+      margin-bottom: 24px;
+    }
+    .article-category {
+      display: inline-block;
+      background: #e8f0f8; color: #2563a0;
+      font-size: 0.75rem; font-weight: 700;
+      padding: 4px 12px; border-radius: 4px;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .article-date {
+      font-size: 0.8rem; color: #999;
+    }
+    .article-title {
+      font-size: 1.8rem; font-weight: 800; color: #1a3a5c;
+      line-height: 1.5; margin-bottom: 32px;
+    }
+    .article-title::after {
+      content: ""; display: block;
+      width: 48px; height: 3px; background: #D4A574;
+      margin-top: 16px;
+    }
+
+    .article-body h2 {
+      font-size: 1.3rem; font-weight: 700; color: #1a3a5c;
+      margin: 56px 0 20px;
+      padding-left: 16px;
+      border-left: 4px solid #D4A574;
+      line-height: 1.5;
+    }
+    .article-body h3 {
+      font-size: 1.1rem; font-weight: 700; color: #1a3a5c;
+      margin: 40px 0 16px;
+      line-height: 1.5;
+    }
+    .article-body p {
+      font-size: 0.95rem; color: #444; line-height: 2.0;
+      margin-bottom: 20px;
+    }
+    .article-body .lead {
+      font-size: 1.02rem; color: #555;
+      background: #fff;
+      border-radius: 8px;
+      padding: 24px 28px;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 40px;
+      line-height: 2.0;
+    }
+
+    /* ===== Highlight Box ===== */
+    .highlight-box {
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 10px; padding: 28px 28px 20px;
+      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .highlight-box h4 {
+      font-size: 0.95rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 12px;
+    }
+    .highlight-box ul {
+      list-style: none; padding: 0;
+    }
+    .highlight-box ul li {
+      font-size: 0.9rem; color: #555; line-height: 1.8;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+    .highlight-box ul li::before {
+      content: ""; position: absolute; left: 0; top: 14px;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #D4A574;
+    }
+
+    /* ===== Quote ===== */
+    .article-body blockquote {
+      border-left: 4px solid #D4A574;
+      background: #fdf8f3;
+      padding: 20px 24px;
+      margin: 28px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.93rem; color: #555;
+      line-height: 1.9;
+    }
+
+    /* ===== Number Section ===== */
+    .number-section {
+      display: flex; gap: 20px; align-items: flex-start;
+      margin: 32px 0;
+    }
+    .number-badge {
+      flex-shrink: 0;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: #1a3a5c; color: #fff;
+      font-size: 1rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .number-content h4 {
+      font-size: 1rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 8px;
+    }
+    .number-content p {
+      font-size: 0.9rem; color: #555;
+    }
+
+    /* ===== CTA Box ===== */
+    .article-cta {
+      background: linear-gradient(160deg, #0f2b45 0%, #1a3a5c 100%);
+      border-radius: 12px; padding: 48px 36px;
+      text-align: center; margin: 56px 0 0;
+    }
+    .article-cta h3 {
+      font-size: 1.2rem; font-weight: 700; color: #fff;
+      margin-bottom: 12px;
+    }
+    .article-cta p {
+      font-size: 0.9rem; color: rgba(255,255,255,0.7);
+      margin-bottom: 24px;
+    }
+    .article-cta a {
+      display: inline-block;
+      background: #D4A574; color: #0f2b45;
+      font-size: 0.95rem; font-weight: 600;
+      padding: 14px 36px; border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .article-cta a:hover { background: #C19660; text-decoration: none; }
+
+    /* ===== Author Box ===== */
+    .author-box {
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 12px; padding: 32px;
+      margin: 48px 0; display: flex; gap: 24px;
+      align-items: flex-start;
+    }
+    .author-icon {
+      flex-shrink: 0;
+      width: 64px; height: 64px; border-radius: 50%;
+      background: #1a3a5c; color: #fff;
+      font-size: 1.5rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .author-info h4 {
+      font-size: 1rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 4px;
+    }
+    .author-info .author-title {
+      font-size: 0.8rem; color: #888; margin-bottom: 10px;
+    }
+    .author-info p {
+      font-size: 0.85rem; color: #666; line-height: 1.8;
+    }
+
+    /* ===== Related Articles ===== */
+    .related-articles {
+      margin: 48px 0;
+    }
+    .related-articles h3 {
+      font-size: 1.1rem; font-weight: 700; color: #1a3a5c;
+      margin-bottom: 20px;
+      padding-left: 16px;
+      border-left: 4px solid #D4A574;
+    }
+    .related-link {
+      display: block;
+      background: #fff; border: 1px solid #e8e8e8;
+      border-radius: 8px; padding: 20px 24px;
+      margin-bottom: 12px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .related-link:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+    .related-link .related-title {
+      font-size: 0.92rem; font-weight: 600; color: #1a3a5c;
+      margin-bottom: 4px;
+    }
+    .related-link .related-desc {
+      font-size: 0.82rem; color: #888;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #1a3a5c; color: rgba(255,255,255,0.7);
+      text-align: center; padding: 36px 24px;
+      font-size: 0.8rem;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .article-title { font-size: 1.4rem; }
+      .article-body h2 { font-size: 1.15rem; }
+      .hamburger { display: block; }
+      .nav-links {
+        display: none; position: absolute;
+        top: 56px; left: 0; width: 100%;
+        background: rgba(255,255,255,0.98);
+        flex-direction: column; padding: 20px 24px; gap: 16px;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+      .nav-links.open { display: flex; }
+      .author-box { flex-direction: column; align-items: center; text-align: center; }
+      .number-section { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="nav-logo"><a href="/">電気工事 研修設計コンサルティング</a></div>
+      <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="/#merit">メリット</a>
+        <a href="/#services">サービス</a>
+        <a href="/#pricing">料金</a>
+        <a href="/#profile">プロフィール</a>
+        <a href="/blog/">ブログ</a>
+        <a href="/#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="height: 56px;"></div>
+
+  <div class="breadcrumb">
+    <a href="/">ホーム</a><span>›</span>
+    <a href="/blog/">ブログ</a><span>›</span>
+    「教える側」を育てていますか？
+  </div>
+
+  <article class="article-container">
+    <div class="article-meta">
+      <div class="article-category">OJT・指導者育成</div>
+      <div class="article-date">2026年5月1日</div>
+    </div>
+    <h1 class="article-title">「教える側」を育てていますか？<br>電気工事のOJT指導者に必要な3つの力</h1>
+
+    <div class="article-body">
+      <div class="lead">
+        「技術は確かなのに、教えるのが下手で新人が育たない」「指導者によって言うことがバラバラで、新人が混乱している」——電気工事の現場で、こうした悩みを抱える経営者・管理者の方は多いのではないでしょうか。OJTの成否を分けるのは、実は「教わる側」ではなく「教える側」の力量です。本記事では、13年間にわたり延べ5,000名超の電気工事士を指導してきた経験をもとに、現場のOJT指導者に求められる3つの力と、中小企業でも実践できる指導者育成の仕組みについてお伝えします。
+      </div>
+
+      <h2>「仕事ができる人」が「教えられる人」とは限らない</h2>
+      <p>
+        電気工事の現場では、技術力の高いベテラン社員がそのままOJT指導者を任されるケースがほとんどです。会社としては「一番仕事ができる人に教えてもらえれば間違いない」と考えるのは自然なことでしょう。
+      </p>
+      <p>
+        しかし、ここに大きな落とし穴があります。長年の経験で身についた技術は、本人にとってはもはや「意識しなくてもできること」になっています。ケーブルの被覆を剥くときの力加減、金属管の曲げ角度の見極め、盤内の結線で手が自然と動く順序——こうした動作の一つひとつが無意識化されているため、「なぜそうするのか」「どこがポイントなのか」を言葉にして伝えることが難しいのです。
+      </p>
+      <p>
+        私が専門学校で教員を始めた頃、まさにこの壁にぶつかりました。自分では当たり前にできる圧着接続の手順を学生に教えようとして、「ここをこうやって、グッとやればいい」としか説明できない。学生は困惑した顔で工具を握ったまま固まっている——あの経験が、「教えるスキル」は技術力とは別のものだと気づくきっかけになりました。
+      </p>
+
+      <h2>OJT指導者に必要な「3つの力」</h2>
+      <p>
+        では、現場で新人を育てるOJT指導者には、具体的にどんな力が求められるのでしょうか。私が13年間の指導経験と、多くの企業の育成現場を見てきた中で、特に重要だと感じている3つの力をご紹介します。
+      </p>
+
+      <div class="number-section">
+        <div class="number-badge">1</div>
+        <div class="number-content">
+          <h4>分解力——作業を「手順」に落とし込む力</h4>
+          <p>
+            自分が無意識にやっている作業を、新人にもわかるレベルまで細かく分解して説明する力です。たとえば「VVFケーブルの皮むき」ひとつとっても、「ストリッパーの刃の当て方」「力を入れる方向」「被覆が残っていないかの確認方法」など、実際には複数のステップがあります。ベテランは一瞬でやってしまうこの動作を、初めての人にもわかる手順として提示できるかどうか。これが分解力です。
+          </p>
+        </div>
+      </div>
+
+      <div class="number-section">
+        <div class="number-badge">2</div>
+        <div class="number-content">
+          <h4>観察力——新人の「つまずき」を見抜く力</h4>
+          <p>
+            新人が作業しているとき、どこでつまずいているのかを的確に見抜く力です。単に「できていない」ではなく、「工具の持ち方がずれているからうまく力が伝わっていない」「手順の2番目と3番目を逆にしている」といった具体的なポイントを特定できることが重要です。観察力があれば、的外れな指導で新人を混乱させることがなくなります。
+          </p>
+        </div>
+      </div>
+
+      <div class="number-section">
+        <div class="number-badge">3</div>
+        <div class="number-content">
+          <h4>フィードバック力——「伝わる」声かけをする力</h4>
+          <p>
+            見抜いた課題を、新人が受け取りやすい形で伝える力です。「違う、そうじゃない」では新人は萎縮するだけで改善しません。「ここまではOK。次はストリッパーの角度をもう少し立ててみて」のように、肯定→具体的な改善点の順で伝える。この「伝え方」ひとつで、新人の成長速度は大きく変わります。
+          </p>
+        </div>
+      </div>
+
+      <blockquote>
+        技能五輪の選手指導でも、この3つの力のバランスが指導の質を決めます。大会で結果を出す選手の背後には、必ず「教え方がうまいコーチ」がいます。そして、教え方のうまさは才能ではなく、訓練で身につけられるものです。
+      </blockquote>
+
+      <h2>なぜ多くの現場で指導者育成が後回しになるのか</h2>
+      <p>
+        OJT指導者の育成が重要だとわかっていても、実際に取り組んでいる中小電気工事会社はまだ少数派です。その理由はいくつかあります。
+      </p>
+
+      <h3>「教え方を教える」という発想がない</h3>
+      <p>
+        電気工事業界では、職人の技術力については資格制度や技能検定で客観的に評価できる仕組みがあります。しかし「人に教える力」を評価・育成する仕組みは、ほとんどの会社に存在しません。そもそも「教え方にもスキルがある」という認識自体が薄いことが多いのです。
+      </p>
+
+      <h3>指導者自身が「現場の戦力」でもある</h3>
+      <p>
+        中小企業では、OJT指導者は専任ではなく、自分の仕事をこなしながら新人を教えています。日々の工事に追われる中で、指導者としてのスキルアップに時間を割く余裕がないのが実情です。結果として「見て覚えろ」式の指導が続いてしまうのは、指導者個人の怠慢ではなく、仕組みの問題です。
+      </p>
+
+      <h3>「教えた経験」がそのまま「指導力」だと思われている</h3>
+      <p>
+        「何人か新人を見てきたから大丈夫」という経験則だけで指導を任せていませんか。経験は貴重ですが、うまくいった理由やうまくいかなかった原因を振り返る機会がなければ、指導力は属人的なまま蓄積されません。
+      </p>
+
+      <h2>中小企業でもできる指導者育成の仕組み</h2>
+      <p>
+        「指導者を育てる余裕なんてない」と思われるかもしれません。しかし、大がかりな研修は必要ありません。私が企業の育成体制づくりを支援する中で、特に効果が高かった3つの取り組みをご紹介します。
+      </p>
+
+      <h3>① 指導の「型」をつくる——A4一枚の指導シート</h3>
+      <p>
+        主要な作業5～10項目について、「この順番で」「このポイントを押さえて」「この言葉で」教えるという指導シートをA4一枚にまとめます。ベテラン2～3名で「自分はこの作業をどう教えているか」を出し合い、最も効果的な教え方をすり合わせる。この作業自体が、指導者同士の「教え方の共有」になります。
+      </p>
+      <p>
+        専門学校の授業設計でも、私たちは毎回の授業に「指導案」を用意します。何を、どの順番で、どう伝えるかを事前に設計しておくことで、誰が教えても一定の品質を担保できるのです。これと同じ考え方を、OJTにも持ち込めばいい。
+      </p>
+
+      <h3>② 月1回の「指導者ミーティング」を設ける</h3>
+      <p>
+        OJT指導者が2名以上いる会社であれば、月に1回、30分程度の振り返りミーティングを行うだけで指導力は確実に向上します。内容はシンプルです。「今月、新人はどこまで進んだか」「つまずいたポイントは何か」「自分はどう対応したか」——この3つを共有するだけで、指導者同士が互いの教え方から学び合えます。
+      </p>
+      <p>
+        ある企業では、このミーティングを始めて3ヶ月後に「Aさんが使っている声かけのパターンを自分も取り入れたら、新人の反応が変わった」という報告がありました。指導者が孤立せず、チームとして新人を育てる意識が生まれたのです。
+      </p>
+
+      <h3>③ 新人からの「逆フィードバック」を仕組み化する</h3>
+      <p>
+        新人に「教わってみてどうだったか」を聞く仕組みをつくりましょう。ただし、直接聞くと本音が出にくいので、簡単なアンケートシート（「今週わかりやすかった指導」「もう少し説明がほしかったこと」の2項目程度）を使うのがお勧めです。
+      </p>
+      <p>
+        指導者にとって、新人からのフィードバックは何よりの成長材料になります。「自分の説明でちゃんと伝わっていたんだ」という手応えは、指導へのモチベーションを高めます。逆に「ここが伝わっていなかった」という発見は、次の指導を改善する具体的なヒントになります。
+      </p>
+
+      <div class="highlight-box">
+        <h4>指導者育成の3ステップまとめ</h4>
+        <ul>
+          <li>指導の「型」を可視化する（A4指導シートの作成）</li>
+          <li>指導者同士の学び合いの場をつくる（月1回のミーティング）</li>
+          <li>新人からの逆フィードバックを仕組みにする（簡易アンケート）</li>
+        </ul>
+      </div>
+
+      <h2>指導者が育てば、組織が変わる</h2>
+      <p>
+        OJT指導者の育成に取り組むと、新人の定着率が改善するだけではありません。指導者自身の技術力が再確認され、作業手順の見直しにつながるケースも少なくありません。「人に教えるために自分の作業を言語化する」プロセスが、指導者本人のスキルアップにもなるのです。
+      </p>
+      <p>
+        さらに、指導者が「教える力」に自信を持つと、現場全体のコミュニケーションが活性化します。新人が質問しやすくなり、安全面でのヒヤリハットの共有も増え、KY活動や朝礼での発言も具体的になる。教育の仕組みづくりが、結果として現場の安全文化を底上げするのです。
+      </p>
+      <p>
+        私がWorldSkills国際大会のデプティチーフエキスパートとして各国の指導体制を見てきた中でも、強い選手を育てている国は例外なく「指導者の育成」に力を入れていました。これは技能競技に限らず、日常の企業OJTでもまったく同じことが言えます。
+      </p>
+
+      <h2>まとめ：OJTの質は「教える側」で決まる</h2>
+      <p>
+        電気工事のOJTがうまくいかないとき、つい「最近の若い子は……」と新人の側に原因を求めがちです。しかし、本当に見直すべきは「教える側」の育成です。分解力・観察力・フィードバック力——この3つの力を指導者が身につけるだけで、OJTの質は劇的に変わります。
+      </p>
+      <p>
+        しかも、そのために必要なのは大規模な研修ではなく、指導シートの整備、月1回のミーティング、新人からの逆フィードバックといった、小さな仕組みの積み重ねです。
+      </p>
+      <p>
+        「うちの指導者をどう育てればいいんだろう？」——そう感じた方は、ぜひお気軽にご相談ください。御社の現場に合った指導者育成の仕組みを、一緒に設計していきましょう。
+      </p>
+
+      <!-- Related Articles -->
+      <div class="related-articles">
+        <h3>関連記事</h3>
+        <a class="related-link" href="/blog/why-newcomers-quit.html">
+          <div class="related-title">なぜ電気工事の新人は辞めるのか？離職率を下げる育成の考え方</div>
+          <div class="related-desc">新人が辞める3つの本質的な理由と、定着率を改善する育成体制のポイントを解説。</div>
+        </a>
+        <a class="related-link" href="/blog/skill-visualization-methods.html">
+          <div class="related-title">ベテラン職人の技術を「見える化」する方法——暗黙知を次世代に引き継ぐ3つのステップ</div>
+          <div class="related-desc">作業分解・チェックシート・動画記録で暗黙知を組織の財産に変える方法。</div>
+        </a>
+        <a class="related-link" href="/blog/3-pitfalls-of-training.html">
+          <div class="related-title">電気工事の育成体制で陥りやすい3つの落とし穴</div>
+          <div class="related-desc">マニュアルが使われない、指導者が疲弊する、研修が形骸化する——失敗パターンと処方箋。</div>
+        </a>
+      </div>
+
+      <!-- Author Box -->
+      <div class="author-box">
+        <div class="author-icon">大</div>
+        <div class="author-info">
+          <h4>大木 健司</h4>
+          <div class="author-title">専門学校 電気工事分野 主任教員 ／ 研修設計コンサルタント</div>
+          <p>
+            指導歴13年、延べ5,000名超の電気工事士を育成。技能五輪全国大会の選手指導やWorldSkills国際大会デプティチーフエキスパートの経験を持つ。著書に「電気工事、マジわからん」と思ったときに読む本（オーム社）ほか。
+          </p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="article-cta">
+        <h3>御社の指導者育成、一緒に設計しませんか？</h3>
+        <p>初回ヒアリング（約30分・オンライン）は無料です。<br>「指導者の教え方にバラつきがある」という段階でもお気軽にどうぞ。</p>
+        <a href="/#contact">無料ヒアリングに申し込む</a>
+      </div>
+
+    </div>
+  </article>
+
+  <footer>
+    <p style="margin-bottom:6px;">✉ info@ohki-electric.com</p>
+    <p>&copy; 2026 電気工事 研修設計コンサルティング All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

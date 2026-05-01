@@ -1418,16 +1418,16 @@
       <h2 class="section-title">ブログ</h2>
       <p class="section-lead">電気工事業界の人材育成・教育に関する知見をお届けします。</p>
       <div class="blog-preview-list">
+        <a class="blog-preview-card" href="/blog/ojt-trainer-development.html">
+          <div class="blog-preview-category">OJT・指導者育成</div>
+          <h3>「教える側」を育てていますか？電気工事のOJT指導者に必要な3つの力</h3>
+          <p>OJTがうまくいかない原因は指導者の育成不足。中小企業でも実践できる指導者育成の仕組みを解説。</p>
+          <span class="blog-preview-date">2026.05.01</span>
+        </a>
         <a class="blog-preview-card" href="/blog/skill-visualization-methods.html">
           <div class="blog-preview-category">技術継承・見える化</div>
           <h3>ベテラン職人の技術を「見える化」する方法——暗黙知を次世代に引き継ぐ3つのステップ</h3>
           <p>ベテランの暗黙知を作業分解・チェックシート・動画記録の3ステップで組織の財産に変える方法。</p>
-          <span class="blog-preview-date">2026.04.24</span>
-        </a>
-        <a class="blog-preview-card" href="/blog/3-pitfalls-of-training.html">
-          <div class="blog-preview-category">育成体制・研修設計</div>
-          <h3>電気工事の育成体制で陥りやすい3つの落とし穴</h3>
-          <p>マニュアルが使われない、指導者が疲弊する、研修が形骸化する——よくある失敗パターンと処方箋。</p>
           <span class="blog-preview-date">2026.04.24</span>
         </a>
       </div>
@@ -1519,4 +1519,28 @@
   <footer>
     <p style="margin-bottom:6px;">✉ info@ohki-electric.com</p>
     <p>&copy; 2026 電気工事 研修設計コンサルティング All Rights Reserved.</p>
-  </foote
+  </footer>
+
+  <script>
+    function toggleFaq(element) {
+      const faqItem = element.parentElement;
+      faqItem.classList.toggle('open');
+    }
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Trigger initial check
+    window.dispatchEvent(new Event('scroll'));
+
+  </script>
+
+</body>
+</html>
